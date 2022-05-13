@@ -1,2 +1,138 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap")
+    format("sans-serif");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@import "./scss/variables.scss";
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  color: $color-white;
+}
+
+body {
+  background-color: $color-background;
+}
+
+h1 {
+  font-size: 5.1rem;
+  font-weight: 700;
+  color: #35bdac;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+li {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+button {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.button-gradient {
+  border: none;
+  background: var(--gradient-pink-button);
+  color: white;
+  border-radius: 0.4rem;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--black);
+}
+
+a:visited {
+  color: var(--black);
+}
+
+.active::before {
+  content: "";
+  width: 4rem;
+  height: 0.3rem;
+  background-color: $color-pink;
+  display: inline-block;
+  margin-right: -4.3rem;
+  margin-bottom: -1rem;
+}
+
+hr {
+  height: 0;
+  border: 0.01rem solid #2b2c34;
+  margin: 2.4rem 0;
+}
+
+.container {
+  display: flex;
+  max-width: 75%;
+  flex-direction: column;
+}
+
+.game-page .container {
+  max-width: 1300px;
+}
+
+.text-pink {
+  color: var(--pink);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.background-pink {
+  background-color: var(--pink) !important;
+}
+
+.m-4 {
+  margin-top: 6rem;
+}
+
+.title-section {
+  margin-bottom: 3.2rem;
+}
+
+.title-section::before {
+  content: "";
+  width: 0.5rem;
+  height: 2.6rem;
+  margin-bottom: -0.3rem;
+  margin-right: 1.1rem;
+  background-color: var(--green-dark);
+  display: inline-block;
+}
