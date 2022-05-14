@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { tap } from 'rxjs/operators';
-import { GamesService } from '../../services/games/games.service'
+
 
 @Component({
   selector: 'app-default',
@@ -9,10 +8,10 @@ import { GamesService } from '../../services/games/games.service'
 })
 export class DefaultComponent implements OnInit {
 
-  constructor(private service: GamesService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.service.getGames().pipe(tap(console.log))
+
   }
 
 }
