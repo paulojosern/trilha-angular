@@ -1,1 +1,37 @@
-<p>header works!</p>
+<header>
+  <nav class="header-menu">
+    <section>
+      <a href="">
+        <figure>
+          <img src="../../../../assets/images/logo-white.png" alt="logo" />
+        </figure>
+      </a>
+      <ul class="header-nav">
+        <li
+          routerLink=""
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Home
+        </li>
+        <li routerLink="/store" routerLinkActive="active">Store</li>
+      </ul>
+    </section>
+
+    <section class="header-icons">
+      <img src="../../../../assets/icons/ic-search.svg" alt="" />
+
+      <div>
+        <img src="../../../../assets/icons/ic-cart.svg" alt="" />
+      </div>
+
+      <img src="../../../../assets/icons/ic-user.svg" alt="" />
+
+      <!-- <p>Jhon</p>
+
+      <img src="../../../../assets/icons/ic-arrow-donw.svg" alt="" /> -->
+
+      <a class="button-signIn" routerLink="/signin">Sign in</a>
+    </section>
+  </nav>
+</header>

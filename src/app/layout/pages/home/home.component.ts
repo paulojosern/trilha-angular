@@ -13,8 +13,7 @@ export class HomeComponent implements OnInit {
 
   games$: Observable<any>  // Opção usando observable
   games: any[]
-
-
+  
   constructor(private service: GamesService) { }
 
   ngOnInit(): void {

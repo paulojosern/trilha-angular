@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './layout/pages/home/home.component';
 import { StoreComponent } from './layout/pages/store/store.component';
-import { DefaultComponent } from './layout/default/default.component'
+import { DefaultComponent } from './layout/default/default.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 
 const routes: Routes = [
@@ -12,23 +12,22 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: HomeComponent
+        component: HomeComponent,
       },
       {
         path: 'store',
-        component: StoreComponent
-      }
-    ]
+        component: StoreComponent,
+      },
+    ],
   },
-
   {
-    path: 'sign-in',
-    component: SignInComponent
+    path: 'signin',
+    component: SignInComponent,
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
