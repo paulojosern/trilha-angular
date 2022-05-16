@@ -1,8 +1,32 @@
-<p>home !</p>
+<!-- <p>home !</p>
 <ul>
   <li *ngFor="let item of games">{{ item.title }}</li>
 </ul>
 <hr />
 <ul>
   <li *ngFor="let item of games$ | async">{{ item.title }}</li>
-</ul>
+</ul> -->
+
+<main>
+  <section>
+    <div class="flex-content">
+      <div class="intro">
+          <span class="bestselling">Bestselling</span>
+          <img src="../../../../assets/images/banner-home.png" alt="">
+          <div class="intro-content">
+              <h2>Defy death</h2>
+              <p>Play the new <span>CrashLands</span> season</p>
+              <div>
+                <button type="button" class="button-buy" name="buy">Buy now</button>
+              </div>
+          </div>
+      </div>
+      <div class="radio-carrosel-intro">
+          <input class="radio" type="radio" name="carrosel-intro" id="carrosel-intro">
+          <input class="radio" type="radio" name="carrosel-intro" id="carrosel-intro">
+          <input class="radio" type="radio" name="carrosel-intro" id="carrosel-intro">
+          <input class="radio" type="radio" name="carrosel-intro" id="carrosel-intro">
+      </div>
+    </div>
+  </section>
+</main>
