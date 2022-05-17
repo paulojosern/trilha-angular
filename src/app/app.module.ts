@@ -9,11 +9,13 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DefaultModule } from './layout/default/default.module'
 import { SignInComponent } from './sign-in/sign-in.component';
+import { SliderComponent } from './shared/slider/slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,

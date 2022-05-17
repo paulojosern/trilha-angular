@@ -21,5 +21,21 @@
       "producer": "Gearbox Software",
       "price": 215
     }
+  ],
+  "slider": [
+    {
+      "id": 1,
+      "img": "./",
+      "link": "/link",
+      "title": "Pateta Death",
+      "subtitle": "Disney the new season"
+    },
+    {
+      "id": 2,
+      "img": "./",
+      "link": "/link",
+      "title": "Defy Death",
+      "subtitle": "Play the new season"
+    }
   ]
 }
