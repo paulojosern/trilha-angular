@@ -2,18 +2,40 @@
   "games": [
     {
       "id": 1,
-      "title": "Red Dead Redemption",
-      "author": "Rock"
+      "name": "Red Dead Redemption",
+      "author": "Rock",
+      "amount": 215.5,
+      "img": "/img/01"
     },
     {
       "id": 2,
       "title": "Borderlands",
-      "author": "Gyba"
+      "author": "Gyba",
+      "amount": 315.5,
+      "img": "/img/02"
     },
     {
       "id": 3,
       "title": "Zero",
-      "author": "Abc"
+      "author": "Abc",
+      "amount": 485.2,
+      "img": "/img/03"
+    }
+  ],
+  "slider": [
+    {
+      "id": 1,
+      "img": "./",
+      "link": "/link",
+      "title": "Pateta Death",
+      "subtitle": "Disney the new season"
+    },
+    {
+      "id": 2,
+      "img": "./",
+      "link": "/link",
+      "title": "Defy Death",
+      "subtitle": "Play the new season"
     }
   ]
 }
