@@ -6,7 +6,7 @@
 <ul>
   <li *ngFor="let item of games$ | async">{{ item.title }}</li>
 </ul> -->
-
+<span class="background"></span>
 <main>
   <section>
     <div class="flex-content">
@@ -34,7 +34,7 @@
   <section>
     <!-- GAMES-CAROUSEL -->
     <div class="container-games-carousel">
-      <h1>News</h1>
+      <h1 class="h1-layout">News</h1>
       <ul class="games-carousel-ul">
         <li class="games-carousel-list"
         *ngFor="let item of games">
@@ -44,7 +44,7 @@
             <div class="grid-content-favorite">
               <img class="favorite" src="../../../../assets/icons/ic-heart.svg" alt="">
             </div>
-            <span class="game-producer"> {{ item.author}} </span>
+            <span class="game-producer"> {{ item.producer}} </span>
             <div class="flex-content-price">
               <span class="price"> ${{ item.price }},00 </span>
               <span>
@@ -61,4 +61,22 @@
       <span><img src="../../../../assets/icons/ic-arrow-dark.svg" alt=""></span>
     </div>
   </section>
+
+  <section>
+    <!-- BANNER -->
+    <div class="section-banner-content">
+      <h1 class="h1-layout">Most popular</h1>
+      <div class="banner">
+        <img src="../../../../assets/images/big-banner-games/banner-red-dead-woman.png" alt="">
+        <div class="banner-content">
+          <h2>Read Dead it’s back</h2>
+          <p>Come see John’s new adventures</p>
+          <a href="#">Buy now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
 </main>

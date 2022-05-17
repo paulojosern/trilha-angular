@@ -1,5 +1,27 @@
 @import "../../../../styles.scss";
 
+// classes globais
+.h1-layout {
+  color: $color-white;
+  margin-left: 15px;
+}
+
+.h1-layout::before {
+  @extend %detail-before-green;
+}
+
+// detalhe background
+.background {
+  background: #F2F2F2;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 90%);
+  position: absolute;
+  height: 550px;
+  width: 100%;
+  top: 485px;
+  z-index: 0;
+}
+
+// intro
 .flex-content {
   display: flex;
   place-content: center;
@@ -96,7 +118,6 @@
 }
 
 // Carousel games
-
 .section-arrow-next {
   top: -135px;
   margin-right: 10%;
@@ -112,12 +133,7 @@
 
   h1 {
     color: $color-black;
-    margin-left: 15px;
     margin-bottom: 30px;
-  }
-
-  h1::before {
-    @extend %detail-before-green;
   }
 
   .games-carousel-ul {
@@ -159,10 +175,6 @@
   grid-column: 2;
 }
 
-// .grid-content-info span {
-//   display: block;
-// }
-
 .flex-content-price{
   display: flex;
   gap: 5px;
@@ -190,5 +202,42 @@
       width: 28px;
       padding: 3px;
     }
+  }
+}
+
+// banner
+.section-banner-content {
+  margin: auto;
+  margin-top: 50px;
+  max-width: 1043px;
+
+  h1 {
+    margin-bottom: 15px;
+  }
+}
+
+.banner {
+  @extend %banner;
+  background: $color-gradient-banner, url('../../../../assets/images/big-banner-games/banner-red-dead.png') no-repeat;
+}
+
+.banner-content {
+  color: #FFFFFF;
+  display: grid;
+  align-content: end;
+  justify-items: end;
+  gap: 5px;
+  padding: 50px;
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    background: $color-gradient-pink;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px 50px;
   }
 }
