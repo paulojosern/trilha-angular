@@ -94,3 +94,101 @@
   text-align: center;
   padding: 20px 60px;
 }
+
+// Carousel games
+
+.section-arrow-next {
+  top: -135px;
+  margin-right: 10%;
+  display: flex;
+  justify-content: end;
+}
+
+.container-games-carousel {
+  display: grid;
+  margin: auto;
+  margin-top: 60px;
+  max-width: 1043px;
+
+  h1 {
+    color: $color-black;
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+
+  h1::before {
+    @extend %detail-before-green;
+  }
+
+  .games-carousel-ul {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    // list-style: none;
+  }
+
+  img {
+    display: block;
+    border-radius: 4px 4px 0px 0px;
+  }
+}
+
+.grid-games-carousel {
+  background-color: #FAFAFA;
+  border-radius: 0px 0px 4px 4px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  padding: 15px;
+
+  .game-name {
+    color: #030517;
+    font-size: 16px;
+  }
+
+  .game-producer {
+    color: #BBBBBB;
+    font-size: 12px;
+  }
+}
+
+.grid-content-favorite {
+  display: grid;
+  justify-content: end;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+// .grid-content-info span {
+//   display: block;
+// }
+
+.flex-content-price{
+  display: flex;
+  gap: 5px;
+  margin-top: 3px;
+  place-content: end;
+
+  .price {
+    background-color: #3CD3C1;
+    border-radius: 2px;
+    color: $color-white;
+    font-weight: 600;
+    text-align: center;
+    padding: 0px 15px;
+  }
+
+  .games-carousel-button-add {
+    background: $color-gradient-pink;
+    border: none;
+    border-radius: 2px;
+    display: grid;
+    cursor: pointer;
+
+    .image-button-add {
+      height: 25px;
+      width: 28px;
+      padding: 3px;
+    }
+  }
+}

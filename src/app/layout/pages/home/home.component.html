@@ -22,6 +22,7 @@
           </div>
       </div>
       <div class="radio-carrosel-intro">
+        <!-- Aplica *ngfor -->
           <input class="radio" type="radio" name="carrosel-intro" id="carrosel-intro">
           <input class="radio" type="radio" name="carrosel-intro" id="carrosel-intro">
           <input class="radio" type="radio" name="carrosel-intro" id="carrosel-intro">
@@ -31,31 +32,33 @@
   </section>
 
   <section>
-    <div class="section-news">
-      <div class="games-carousel">
-        <h1 class="layout-title">News</h1>
-        <ul class="games-carousel-ul">
-          <li class="games-carousel-list"
-          *ngFor="let item of games">
-            <img class="games-carousel-list-image" src="assets/images/game-populationzero.png" alt="">
-            <div class="grid-content-list">
-              <span class="game-name"> {{ item.title }} </span>
-              <div class="grid-content-info">
-                <img class="favorite" src="assets/icons/home/favorite_border.svg" alt="">
-              </div>
-              <span class="game-producer"> {{ item.author}} </span>
-              <div class="flex-price">
-                <span class="price"> ${{ item.price }},00 </span>
-                <!-- <span><button class="section-button-add"><img class="image-button-add" src="assets/icons/home/add_shopping_cart.svg" alt=""></button></span> -->
-              </div>
+    <!-- GAMES-CAROUSEL -->
+    <div class="container-games-carousel">
+      <h1>News</h1>
+      <ul class="games-carousel-ul">
+        <li class="games-carousel-list"
+        *ngFor="let item of games">
+          <img class="games-carousel-image" [attr.src]="item.image" alt="">
+          <div class="grid-games-carousel">
+            <span class="game-name"> {{ item.title }} </span>
+            <div class="grid-content-favorite">
+              <img class="favorite" src="../../../../assets/icons/ic-heart.svg" alt="">
             </div>
-          </li>
-        </ul>
-      </div>
-      <!-- <div class="section-arrow-next">
-        <span><img src="assets/icons/home/arrow-next.svg" alt=""></span>
-      </div> -->
+            <span class="game-producer"> {{ item.author}} </span>
+            <div class="flex-content-price">
+              <span class="price"> ${{ item.price }},00 </span>
+              <span>
+                <button class="games-carousel-button-add">
+                  <img class="image-button-add" src="../../../../assets/icons/ic-cart-add.svg" alt="">
+                </button>
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="section-arrow-next">
+      <span><img src="../../../../assets/icons/ic-arrow-dark.svg" alt=""></span>
     </div>
   </section>
-
 </main>

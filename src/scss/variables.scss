@@ -10,3 +10,14 @@ $color-green-dark: #35bdac;
 // linear-gradient
 $color-gradient-pink: linear-gradient(178.59deg, #FF5F5F -14.51%, #F062C0 102.86%, #F23131 102.86%);
 
+// detail-before
+%detail-before-green {
+    background: #3CD3C1;
+    margin-left: -15px;
+    content: "";
+    display: block;
+    height: 30px;
+    width: 7px;
+    top: 15%;
+    position: absolute;
+}

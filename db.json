@@ -2,18 +2,21 @@
   "games": [
     {
       "id": 1,
+      "image": "assets/images/banner-games/banner-population-zero.png",
       "title": "Population Zero",
       "author": "Enplex Games",
       "price": 215
     },
     {
       "id": 2,
+      "image": "assets/images/banner-games/banner-project-winter.png",
       "title": "Project Winter",
       "author": "Other Ocean",
       "price": 215
     },
     {
       "id": 3,
+      "image": "assets/images/banner-games/banner-borderlands.png",
       "title": "Borderlands 3",
       "author": "Gearbox Software",
       "price": 215
