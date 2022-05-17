@@ -28,14 +28,24 @@
       "img": "./",
       "link": "/link",
       "title": "Pateta Death",
-      "subtitle": "Disney the new season"
+      "subtitle": "Disney the new season",
+      "type": "news"
     },
     {
       "id": 2,
       "img": "./",
       "link": "/link",
       "title": "Defy Death",
-      "subtitle": "Play the new season"
+      "subtitle": "Play the new season",
+      "type": "popular"
+    },
+    {
+      "id": 3,
+      "img": "./",
+      "link": "/link",
+      "title": "Defy banana",
+      "subtitle": "Banna the new season",
+      "type": "popular"
     }
   ]
 }

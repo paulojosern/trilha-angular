@@ -4,6 +4,7 @@ import { HomeComponent } from './layout/pages/home/home.component';
 import { StoreComponent } from './layout/pages/store/store.component';
 import { DefaultComponent } from './layout/default/default.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
   {
@@ -24,10 +25,14 @@ const routes: Routes = [
     path: 'signin',
     component: SignInComponent,
   },
+  {
+    path: 'signup',
+    component: SignUpComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

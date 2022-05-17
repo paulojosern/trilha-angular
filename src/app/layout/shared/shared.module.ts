@@ -19,7 +19,8 @@ import { SliderComponent } from './slider/slider.component';
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SliderComponent
   ]
 })
 export class SharedModule { }

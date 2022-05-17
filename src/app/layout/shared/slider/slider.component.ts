@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { DataSlider } from '../../pages/home/home.component';
 
 @Component({
   selector: 'app-slider',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderComponent implements OnInit {
 
+  @Input() data: DataSlider[]
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.data);
   }
 
 }

@@ -9,7 +9,9 @@
 
 <main>
   <section>
-    <div class="flex-content">
+    <app-slider *ngIf="slider" [data]="slider"></app-slider>
+
+    <!-- <div class="flex-content">
       <div class="intro">
         <span class="bestselling">Bestselling</span>
         <img src="../../../../assets/images/banner-home.png" alt="" />
@@ -51,7 +53,7 @@
           id="carrosel-intro"
         />
       </div>
-    </div>
+    </div> -->
   </section>
 
   <section>
