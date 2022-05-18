@@ -2,100 +2,308 @@
   "games": [
     {
       "id": 1,
-      "name": "Red Dead Redemption",
-      "author": "Rock",
-      "amount": 215.5,
-      "img": "/img/01"
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "news"
     },
     {
       "id": 2,
-      "title": "Borderlands",
-      "author": "Gyba",
-      "amount": 315.5,
-      "img": "/img/02"
+      "title": "Project Winter",
+      "author": "Rockstar Games",
+      "amount": 215.0,
+      "discount": 0,
+      "img": " assets/images/banner-games/banner-project-winter.png",
+      "type": "news"
     },
     {
       "id": 3,
-      "title": "Zero",
-      "author": "Abc",
-      "amount": 485.2,
-      "img": "/img/03"
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "news"
+    },
+    {
+      "id": 4,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "news"
+    },
+    {
+      "id": 5,
+      "title": "Project Winter",
+      "author": "Rockstar Games",
+      "amount": 215.0,
+      "discount": 0,
+      "img": " assets/images/banner-games/banner-project-winter.png",
+      "type": "news"
+    },
+    {
+      "id": 6,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "news"
+    },
+
+    {
+      "id": 7,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "popular"
+    },
+    {
+      "id": 8,
+      "title": "Red Dead Redemption ",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "popular"
+    },
+    {
+      "id": 9,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "popular"
+    },
+    {
+      "id": 10,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "popular"
+    },
+    {
+      "id": 11,
+      "title": "Resident Evil 3",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-resident-evil.png",
+      "type": "popular"
+    },
+    {
+      "id": 12,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "popular"
+    },
+
+    {
+      "id": 13,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "upcoming"
+    },
+    {
+      "id": 14,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "upcoming"
+    },
+    {
+      "id": 15,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "upcoming"
+    },
+    {
+      "id": 16,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "upcoming"
+    },
+    {
+      "id": 17,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "upcoming"
+    },
+    {
+      "id": 18,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "upcoming"
+    },
+
+    {
+      "id": 19,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "upcoming"
+    },
+    {
+      "id": 20,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "upcoming"
+    },
+    {
+      "id": 21,
+      "title": "Resident Evil 3",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-resident-evil.png",
+      "type": "upcoming"
+    },
+    {
+      "id": 22,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "upcoming"
+    },
+    {
+      "id": 23,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "upcoming"
+    },
+    {
+      "id": 24,
+      "title": "Resident Evil 3",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-resident-evil.png",
+      "type": "upcoming"
+    },
+
+    {
+      "id": 25,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "free"
+    },
+    {
+      "id": 26,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "free"
+    },
+    {
+      "id": 27,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "free"
+    },
+    {
+      "id": 28,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "upcoming"
+    },
+    {
+      "id": 29,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "free"
+    },
+    {
+      "id": 30,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "free"
     }
   ],
+
   "slider": [
     {
       "id": 1,
       "img": "./",
       "link": "/link",
       "title": "Pateta Death",
-      "subtitle": "Disney the new season",
-      "type": "news"
+      "subtitle": "Disney the new season"
     },
     {
       "id": 2,
-      "img": "/src/assets/images/banner-home.png",
+      "img": "./",
       "link": "/link",
       "title": "Defy Death",
-      "subtitle": "Play the new season",
-      "type": "popular"
+      "subtitle": "Play the new season"
     },
     {
       "id": 3,
       "img": "./",
       "link": "/link",
       "title": "Defy banana",
-      "subtitle": "Banna the new season",
-      "type": "popular"
-    }
-  ],
-  "carousel": [
-    {
-      "id": 1,
-      "title": "Population Zero",
-      "author": "Enplex Games",
-      "amount": 185.2,
-      "img": "/src/assets/images/banner-games/banner-population-zero.png",
-      "type": "news"
-    },
-    {
-      "id": 2,
-      "title": "Project Winter",
-      "author": "Other Ocean",
-      "amount": 285.2,
-      "img": "/src/assets/images/banner-games/banner-project-winter.png",
-      "type": "news"
-    },
-    {
-      "id": 3,
-      "title": "Borderlands 3",
-      "author": "Gearbox Software",
-      "amount": 215.0,
-      "img": "/src/assets/images/banner-games/banner-borderlands.png",
-      "type": "news"
+      "subtitle": "Banna the new season"
     },
     {
       "id": 4,
-      "title": "Population Zero",
-      "author": "Enplex Games",
-      "amount": 185.2,
-      "img": "/src/assets/images/banner-games/banner-population-zero.png",
-      "type": "news"
-    },
-    {
-      "id": 5,
-      "title": "Project Winter",
-      "author": "Other Ocean",
-      "amount": 285.2,
-      "img": "/src/assets/images/banner-games/banner-project-winter.png",
-      "type": "news"
-    },
-    {
-      "id": 6,
-      "title": "Borderlands 3",
-      "author": "Gearbox Software",
-      "amount": 215.0,
-      "img": "/src/assets/images/banner-games/banner-borderlands.png",
-      "type": "news"
+      "img": "./",
+      "link": "/link",
+      "title": "Defy banana",
+      "subtitle": "Banna the new season"
     }
   ]
 }

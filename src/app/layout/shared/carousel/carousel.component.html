@@ -1,29 +1,33 @@
-<!-- GAMES-CAROUSEL -->
-<div class="container-games-carousel">
-
-  <ul class="games-carousel-ul">
-    <!-- <li class="games-carousel-list"
-    *ngFor="let item of games"> -->
-    <li class="games-carousel-list">
-      <!-- <img class="games-carousel-image" [attr.src]="item.image" alt=""> -->
-      <div class="grid-games-carousel">
-        <!-- <span class="game-name"> {{ item.title }} </span> -->
-        <div class="grid-content-favorite">
-          <img class="favorite" src="../../../../assets/icons/ic-heart.svg" alt="">
+<div class="container">
+  <ul>
+    <div *ngFor="let game of dataGame">
+      <li *ngIf="game.type === 'news'">
+        <div class="scroll-container">
+          <div class="scroll-area">
+            <div class="game-content">
+              <img src="{{ game.img }}">
+              <div class="grid-game-content">
+                <span class="game-name"> {{ game.title }} </span>
+                <span class="game-author"> {{ game.author }} </span>
+                <div class="favorite">
+                  <img src="../../../../assets/icons/ic-heart.svg">
+                </div>
+                <div class="flex-content">
+                  <span class="price"> ${{ game.amount }},00</span>
+                  <span>
+                    <button class="button-add">
+                      <img class="image-button-add" src="../../../../assets/icons/ic-cart-add.svg">
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- <span class="game-producer"> {{ item.producer}} </span> -->
-        <div class="flex-content-price">
-          <!-- <span class="price"> ${{ item.price }},00 </span> -->
-          <span>
-            <button class="games-carousel-button-add">
-              <img class="image-button-add" src="../../../../assets/icons/ic-cart-add.svg" alt="">
-            </button>
-          </span>
-        </div>
-      </div>
-    </li>
+      </li>
+    </div>
   </ul>
+  <div class="arrow-next">
+    <span><img src="../../../../assets/icons/ic-arrow-dark.svg" alt=""></span>
 </div>
-<div class="section-arrow-next">
-  <span><img src="../../../../assets/icons/ic-arrow-dark.svg" alt=""></span>
-</div>
+

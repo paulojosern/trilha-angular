@@ -136,3 +136,55 @@ hr {
   background-color: var(--green-dark);
   display: inline-block;
 }
+
+.ic {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.ic-check {
+  background: url("./assets/icons/ic-check.svg");
+}
+
+.ic-email {
+  background: url("./assets/icons/ic-email.svg");
+}
+
+.ic-password {
+  background: url("./assets/icons/ic-password.svg");
+}
+
+.ic-user-light {
+  background: url("./assets/icons/ic-user-light.svg");
+}
+
+.ic-user-dark {
+  background: url("./assets/icons/ic-user-dark.svg");
+}
+
+.ic-search {
+  background: url("./assets/icons/ic-search.svg");
+}
+
+.ic-cart {
+  background: url("./assets/icons/ic-cart.svg");
+}
+
+.ic-cart-add {
+  background: url("./assets/icons/ic-cart-add.svg") no-repeat;
+}
+
+.ic-arrow-donw {
+  background: url("./assets/icons/ic-arrow-donw.svg");
+}
+
+.ic-heart {
+  background: url("./assets/icons/ic-heart.svg") no-repeat;
+}
+
+.ic-search-bar {
+  background: url("./assets/icons/ic-search-bar.svg") no-repeat;
+}

@@ -9,11 +9,12 @@ import { IDataCarousel } from './../../../modules/idata-carousel';
 })
 export class CarouselComponent implements OnInit {
 
-  @Input() data: IDataCarousel[]
+  @Input() dataGame: IDataCarousel[]
 
   constructor() { }
 
   ngOnInit(): void {
+    // console.log(this.dataGame);
   }
 
 }

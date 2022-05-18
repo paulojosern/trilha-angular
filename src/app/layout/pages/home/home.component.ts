@@ -18,16 +18,17 @@ export class HomeComponent implements OnInit {
   slider: IDataSlider[]
   popular: IDataSlider[]
 
-  carousel: IDataCarousel[]
+  news: IDataCarousel[]
 
   constructor(private service: GamesService) { }
 
   ngOnInit(): void {
     // this.games$ = this.service.getGames() // Opção usando observable
-    // this.service.getGames().subscribe(games => {
-    //   console.log(games)
-    //   this.games = games
-    // });
+    this.service.getGames().subscribe(games => {
+      this.news = games.filter(gamesNews => gamesNews.type === 'news')
+      console.log(this.news)
+      this.news = games
+    });
 
     this.service.getSlider().subscribe(slider => {
 

@@ -21,9 +21,4 @@ export class GamesService {
   public getSlider(): Observable<any> {
     return this.httpClient.get(this.url + 'slider').pipe(tap(console.log))
   }
-
-  public getCarousel(): Observable<any> {
-    return this.httpClient.get(this.url + 'carousel').pipe(tap(console.log))
-  }
-
 }
