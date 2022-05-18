@@ -5,12 +5,14 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SliderComponent } from './slider/slider.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    SliderComponent
+    SliderComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { SliderComponent } from './slider/slider.component';
   exports: [
     HeaderComponent,
     FooterComponent,
-    SliderComponent
+    SliderComponent,
+    CarouselComponent
   ]
 })
 export class SharedModule { }
