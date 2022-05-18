@@ -127,25 +127,25 @@
 
       <div class="grid-store-card-games">
         <section class="container-cards">
-          <div class="card-game">
+          <div
+            class="card-game"
+            *ngFor="let game of games$ | async | slice: 0:12"
+          >
             <figure>
-              <img
-                src="../../../../assets/images/banner-games/banner-project-winter.png"
-                alt=""
-              />
+              <img src="{{ game.img }}" alt="" />
             </figure>
 
             <div class="card-content">
               <div class="card-content-left">
-                <h3>Project Winter</h3>
-                <p>Rockstar Games</p>
+                <h3>{{ game.title }}</h3>
+                <p>{{ game.author }}</p>
               </div>
 
               <div class="card-content-right">
                 <i class="ic ic-heart"></i>
                 <div class="card-buttons">
                   <div class="game-price">
-                    <p>$215,90</p>
+                    <p>${{ game.amount }},00</p>
                   </div>
                 </div>
               </div>
