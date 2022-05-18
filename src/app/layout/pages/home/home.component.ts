@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { GamesService } from '../../../services/games/games.service';
+import { IDataCarousel } from './../../../modules/idata-carousel';
 import { IDataSlider } from './../../../modules/idata-slider';
 
 @Component({
@@ -16,6 +17,8 @@ export class HomeComponent implements OnInit {
 
   slider: IDataSlider[]
   popular: IDataSlider[]
+
+  carousel: IDataCarousel[]
 
   constructor(private service: GamesService) { }
 

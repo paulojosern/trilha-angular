@@ -47,5 +47,55 @@
       "subtitle": "Banna the new season",
       "type": "popular"
     }
+  ],
+  "carousel": [
+    {
+      "id": 1,
+      "title": "Population Zero",
+      "author": "Enplex Games",
+      "amount": 185.2,
+      "img": "/src/assets/images/banner-games/banner-population-zero.png",
+      "type": "news"
+    },
+    {
+      "id": 2,
+      "title": "Project Winter",
+      "author": "Other Ocean",
+      "amount": 285.2,
+      "img": "/src/assets/images/banner-games/banner-project-winter.png",
+      "type": "news"
+    },
+    {
+      "id": 3,
+      "title": "Borderlands 3",
+      "author": "Gearbox Software",
+      "amount": 215.0,
+      "img": "/src/assets/images/banner-games/banner-borderlands.png",
+      "type": "news"
+    },
+    {
+      "id": 4,
+      "title": "Population Zero",
+      "author": "Enplex Games",
+      "amount": 185.2,
+      "img": "/src/assets/images/banner-games/banner-population-zero.png",
+      "type": "news"
+    },
+    {
+      "id": 5,
+      "title": "Project Winter",
+      "author": "Other Ocean",
+      "amount": 285.2,
+      "img": "/src/assets/images/banner-games/banner-project-winter.png",
+      "type": "news"
+    },
+    {
+      "id": 6,
+      "title": "Borderlands 3",
+      "author": "Gearbox Software",
+      "amount": 215.0,
+      "img": "/src/assets/images/banner-games/banner-borderlands.png",
+      "type": "news"
+    }
   ]
 }

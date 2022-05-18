@@ -1,1 +1,29 @@
-<p>carousel works!</p>
+<!-- GAMES-CAROUSEL -->
+<div class="container-games-carousel">
+
+  <ul class="games-carousel-ul">
+    <!-- <li class="games-carousel-list"
+    *ngFor="let item of games"> -->
+    <li class="games-carousel-list">
+      <!-- <img class="games-carousel-image" [attr.src]="item.image" alt=""> -->
+      <div class="grid-games-carousel">
+        <!-- <span class="game-name"> {{ item.title }} </span> -->
+        <div class="grid-content-favorite">
+          <img class="favorite" src="../../../../assets/icons/ic-heart.svg" alt="">
+        </div>
+        <!-- <span class="game-producer"> {{ item.producer}} </span> -->
+        <div class="flex-content-price">
+          <!-- <span class="price"> ${{ item.price }},00 </span> -->
+          <span>
+            <button class="games-carousel-button-add">
+              <img class="image-button-add" src="../../../../assets/icons/ic-cart-add.svg" alt="">
+            </button>
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="section-arrow-next">
+  <span><img src="../../../../assets/icons/ic-arrow-dark.svg" alt=""></span>
+</div>

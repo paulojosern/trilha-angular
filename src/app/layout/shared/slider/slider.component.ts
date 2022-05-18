@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+
 import { IDataSlider } from 'src/app/modules/idata-slider';
 
 @Component({
