@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DataSlider } from '../../pages/home/home.component';
+import { IDataSlider } from 'src/app/modules/idata-slider';
 
 @Component({
   selector: 'app-slider',
@@ -8,7 +8,7 @@ import { DataSlider } from '../../pages/home/home.component';
 })
 export class SliderComponent implements OnInit {
 
-  @Input() data: DataSlider[]
+  @Input() data: IDataSlider[]
 
   constructor() { }
 

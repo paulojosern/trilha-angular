@@ -1,18 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { GamesService } from '../../../services/games/games.service'
-
-
-
-export interface DataSlider {
-  id: number
-  img: string;
-  link: string;
-  title: string;
-  subtitle: string
-}
-
+import { GamesService } from '../../../services/games/games.service';
+import { IDataSlider } from './../../../modules/idata-slider';
 
 @Component({
   selector: 'app-home',
@@ -24,8 +14,8 @@ export class HomeComponent implements OnInit {
   games$: Observable<any>  // Opção usando observable
   games: any[]
 
-  slider: DataSlider[]
-  popular: DataSlider[]
+  slider: IDataSlider[]
+  popular: IDataSlider[]
 
   constructor(private service: GamesService) { }
 
@@ -40,10 +30,8 @@ export class HomeComponent implements OnInit {
 
       this.slider = slider
 
-
       this.popular = slider.filter(item => item.type === 'popular')
       console.log(this.popular)
     });
   }
-
 }

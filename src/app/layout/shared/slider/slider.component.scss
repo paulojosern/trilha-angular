@@ -17,17 +17,17 @@
   flex-direction: column;
   display: flex;
   gap: 1rem;
-}
-.slider-buttons a {
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  background: white;
-  text-align: center;
-  padding: 0.5em 0;
-  text-decoration: none;
-  color: #000;
-  border-radius: 50%;
+
+  a {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background: white;
+    text-align: center;
+    padding: 0.5em 0;
+    color: #000;
+    border-radius: 50%;
+  }
 }
 
 .scroll-container,
@@ -40,10 +40,12 @@
 .scroll-container {
   position: relative;
   overflow: hidden;
+  scroll-snap-type: y mandatory;
+  // efeito de rolagem suave
+  scroll-behavior: smooth;
+  // garantindo que funcione em outros navegadores
   -webkit-scroll-snap-type: y mandatory;
   -ms-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 .scroll-area {

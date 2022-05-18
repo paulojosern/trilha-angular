@@ -33,7 +33,7 @@
     },
     {
       "id": 2,
-      "img": "./",
+      "img": "/src/assets/images/banner-home.png",
       "link": "/link",
       "title": "Defy Death",
       "subtitle": "Play the new season",
