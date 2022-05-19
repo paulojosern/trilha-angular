@@ -279,31 +279,31 @@
   "slider": [
     {
       "id": 1,
-      "img": "./",
+      "img": "assets/images/banner-home.png",
       "link": "/link",
-      "title": "Pateta Death",
-      "subtitle": "Disney the new season"
+      "title": "Crashlands",
+      "subtitle": "Play the new CrashLands season"
     },
     {
       "id": 2,
-      "img": "./",
+      "img": "assets/images/slider-borderlands.jpeg",
       "link": "/link",
-      "title": "Defy Death",
-      "subtitle": "Play the new season"
+      "title": "Borderlands 3",
+      "subtitle": "Play the new Borderlands"
     },
     {
       "id": 3,
-      "img": "./",
+      "img": "assets/images/slider-valorant.jpg",
       "link": "/link",
-      "title": "Defy banana",
-      "subtitle": "Banna the new season"
+      "title": "Valorant",
+      "subtitle": "Play the new season"
     },
     {
       "id": 4,
-      "img": "./",
+      "img": "assets/images/slider-god-of-war.jpg",
       "link": "/link",
-      "title": "Defy banana",
-      "subtitle": "Banna the new season"
+      "title": "God of War",
+      "subtitle": "Play the new God of War"
     }
   ]
 }

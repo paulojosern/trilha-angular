@@ -1,33 +1,66 @@
-<div class="container">
-  <ul>
-    <div *ngFor="let game of dataGame">
-      <li *ngIf="game.type === 'news'">
-        <div class="scroll-container">
-          <div class="scroll-area">
-            <div class="game-content">
-              <img src="{{ game.img }}">
-              <div class="grid-game-content">
-                <span class="game-name"> {{ game.title }} </span>
-                <span class="game-author"> {{ game.author }} </span>
-                <div class="favorite">
-                  <img src="../../../../assets/icons/ic-heart.svg">
-                </div>
-                <div class="flex-content">
-                  <span class="price"> ${{ game.amount }},00</span>
-                  <span>
-                    <button class="button-add">
-                      <img class="image-button-add" src="../../../../assets/icons/ic-cart-add.svg">
-                    </button>
-                  </span>
+<!-- <div class="container">
+  <div class="carousel-container">
+
+    <div class="card-game"
+      *ngFor="let game of dataGame"
+    >
+      <div
+        *ngIf="game.type === 'news'"
+        class="card-game-content"
+      >
+
+        <img src="{{ game.img }}">
+        <span class="game-name">{{ game.title }}</span>
+        <span class="game-author">{{ game.author }}</span>
+
+      </div>
+
+    </div>
+
+  </div>
+  <button class="btn-carousel btn-next">
+    <i class="ic ic-arrow-next icon-carousel icon-next"
+      (click)="onNextClick()"
+    ></i>
+  </button>
+</div> -->
+
+<div class="teste">
+  <div class="container">
+    <ul>
+      <div *ngFor="let game of dataGame">
+        <li *ngIf="game.type === 'news'">
+          <div class="scroll-container">
+            <div class="scroll-area">
+              <div class="game-content">
+                <img src="{{ game.img }}">
+                <div class="grid-game-content">
+                  <span class="game-name"> {{ game.title }} </span>
+                  <span class="game-author"> {{ game.author }} </span>
+                  <div class="favorite">
+                    <img src="../../../../assets/icons/ic-heart.svg">
+                  </div>
+                  <div class="flex-content">
+                    <span class="price"> ${{ game.amount }},00</span>
+                    <span>
+                      <button class="button-add">
+                        <img class="image-button-add" src="../../../../assets/icons/ic-cart-add.svg">
+                      </button>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </li>
-    </div>
-  </ul>
+        </li>
+      </div>
+    </ul>
+    <!-- <div class="arrow-next"> -->
+      <!-- <span><img src="../../../../assets/icons/ic-arrow-dark.svg" alt=""></span> -->
+  </div>
   <div class="arrow-next">
-    <span><img src="../../../../assets/icons/ic-arrow-dark.svg" alt=""></span>
+    <a href="#">Next</a>
+  </div>
 </div>
+
 

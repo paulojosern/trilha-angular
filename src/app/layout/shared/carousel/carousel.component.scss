@@ -1,13 +1,87 @@
 @import "../../../../styles.scss";
 
+// .container {
+//   max-width: 1043px;
+//   margin: auto;
+// }
+
+// .carousel-container {
+//   width: 90%;
+//   display: flex;
+//   gap: 30px;
+//   justify-content: space-between;
+//   overflow: hidden;
+//   scroll-snap-type: y mandatory;
+//   // efeito de rolagem suave
+//   scroll-behavior: smooth;
+//   // garantindo que funcione em outros navegadores
+//   -webkit-scroll-snap-type: y mandatory;
+//   -ms-scroll-snap-type: y mandatory;
+// }
+
+// .card-game-content {
+//   display: grid;
+// }
+
+
+// .btn-carousel {
+//   position: absolute;
+//   // top: 0;
+//   // bottom: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   // width: 15%;
+//   padding: 0;
+//   color: #fff;
+//   text-align: center;
+//   background: 0 0;
+//   border: 0;
+//   cursor: pointer;
+// }
+
+// .btn-next {
+//   right: 0;
+// }
+
+// .icon-carousel {
+//   color: red;
+//   font-size: 35px ;
+//   opacity: 0.5;
+//   transition: all 0.15s ease;
+// }
+
+.teste {
+  margin: auto;
+  max-width: 1043px;
+  display: flex;
+}
+
 .container {
   margin: auto;
+  max-width: 963px;
 
   ul {
     display: flex;
     gap: 30px;
     list-style: none;
   }
+}
+
+.scroll-container,
+.scroll-area {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  // efeito de rolagem suave
+  scroll-behavior: smooth;
+  // garantindo que funcione em outros navegadores
+  -webkit-scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
 }
 
 .game-content {
@@ -72,4 +146,3 @@
     }
   }
 }
-

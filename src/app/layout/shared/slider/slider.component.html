@@ -2,6 +2,7 @@
   <div class="slider-buttons">
     <a *ngFor="let item of data" href="#slider-{{ item.id }}"></a>
   </div>
+  <span class="bestselling">Bestselling</span>
   <div class="scroll-container">
     <div
       class="scroll-area"
@@ -9,8 +10,13 @@
       id="slider-{{ item.id }}"
     >
       <img src="{{ item.img }}">
-      <h2>{{ item.title }}</h2>
-      <p>{{ item.subtitle }}</p>
+      <div class="scroll-area-content">
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.subtitle }}</p>
+        <div class="button-buy">
+          <a class="btn-buy" href="{{ item.link }}">Buy now</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
