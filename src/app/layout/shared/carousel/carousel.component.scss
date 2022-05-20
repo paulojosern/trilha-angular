@@ -11,6 +11,7 @@ p {
 }
 
 button {
+  background: transparent;
   border: none;
   cursor: pointer;
 }
@@ -49,7 +50,6 @@ button {
 }
 
 .btn-favorite {
-  background: transparent;
   display: grid;
   justify-content: end;
   grid-row: 1;
@@ -84,4 +84,14 @@ button {
       padding: 3px;
     }
   }
+}
+
+.arrow-next {
+  position: absolute;
+  top: 30%;
+  right: -65px;
+  font-size: 1rem;
+  text-align: right;
+  z-index: 2;
+  flex-direction: column;
 }
