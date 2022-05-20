@@ -11,9 +11,9 @@ export class StoreComponent implements OnInit {
   games$: Observable<any>;
   games: any[];
   gamesBackup: any[];
-  priceList = []
+  priceList = [];
 
-  constructor(private service: GamesService) { }
+  constructor(private service: GamesService) {}
 
   ngOnInit(): void {
     this.games$ = this.service.getGames();
@@ -24,13 +24,16 @@ export class StoreComponent implements OnInit {
     });
   }
 
-
-
   onChange(value, e): void {
-    e.target.checked ? this.priceList.push(value) :
-      this.priceList = this.priceList.filter(i => i !== value)
+    e.target.checked
+      ? this.priceList.push(value)
+      : (this.priceList = this.priceList.filter((i) => i !== value));
 
-    this.games = !this.priceList.length ? (this.games = this.gamesBackup) : this.gamesBackup.filter(i => this.priceList.some(a => a > i.amount))
+    this.games = !this.priceList.length
+      ? (this.games = this.gamesBackup)
+      : this.gamesBackup.filter((i) =>
+          this.priceList.some((a) => a > i.amount)
+        );
   }
 
   onSortBy(e): void {
@@ -52,11 +55,13 @@ export class StoreComponent implements OnInit {
           return 0;
         }
       }
-    })
+    });
   }
 
   onSearch(e): void {
-    const result = this.gamesBackup.filter(i => i.title.toLowerCase().includes(e.target.value.toLowerCase()))
-    this.games = !result?.length ? this.gamesBackup : result
+    const result = this.gamesBackup.filter((i) =>
+      i.title.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+    this.games = !result?.length ? this.gamesBackup : result;
   }
 }

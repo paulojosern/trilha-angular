@@ -7,7 +7,9 @@
       "amount": 35.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "news"
+      "type": "news",
+      "system": "windows",
+      "genre": "fps"
     },
     {
       "id": 2,
@@ -16,7 +18,9 @@
       "amount": 15.0,
       "discount": 0,
       "img": " assets/images/banner-games/banner-project-winter.png",
-      "type": "news"
+      "type": "news",
+      "system": "windows",
+      "genre": "adventure"
     },
     {
       "id": 3,
@@ -25,7 +29,9 @@
       "amount": 75.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-borderlands.png",
-      "type": "news"
+      "type": "news",
+      "system": "windows",
+      "genre": "adventure"
     },
     {
       "id": 4,
@@ -34,7 +40,9 @@
       "amount": 235.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "news"
+      "type": "news",
+      "system": "windows",
+      "genre": "rpg"
     },
     {
       "id": 5,
@@ -43,7 +51,9 @@
       "amount": 215.0,
       "discount": 0,
       "img": " assets/images/banner-games/banner-project-winter.png",
-      "type": "news"
+      "type": "news",
+      "system": "windows",
+      "genre": "indie"
     },
     {
       "id": 6,
@@ -52,7 +62,9 @@
       "amount": 85.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-borderlands.png",
-      "type": "news"
+      "type": "news",
+      "system": "windows",
+      "genre": "rpg"
     },
     {
       "id": 7,
@@ -61,7 +73,9 @@
       "amount": 215.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "popular"
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
     },
     {
       "id": 8,
@@ -70,7 +84,9 @@
       "amount": 235.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-red-dead.png",
-      "type": "popular"
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
     },
     {
       "id": 9,
@@ -79,7 +95,9 @@
       "amount": 215.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-borderlands.png",
-      "type": "popular"
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
     },
     {
       "id": 10,
@@ -88,7 +106,9 @@
       "amount": 235.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "popular"
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
     },
     {
       "id": 11,
@@ -97,7 +117,9 @@
       "amount": 235.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-resident-evil.png",
-      "type": "popular"
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
     },
     {
       "id": 12,
@@ -106,7 +128,9 @@
       "amount": 215.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-borderlands.png",
-      "type": "popular"
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
     },
     {
       "id": 13,
@@ -115,7 +139,9 @@
       "amount": 235.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "shooters"
     },
     {
       "id": 14,
@@ -124,7 +150,9 @@
       "amount": 235.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-red-dead.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "shooters"
     },
     {
       "id": 15,
@@ -133,7 +161,9 @@
       "amount": 215.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-borderlands.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "shooters"
     },
     {
       "id": 16,
@@ -142,7 +172,9 @@
       "amount": 235.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "simulation"
     },
     {
       "id": 17,
@@ -151,7 +183,9 @@
       "amount": 235.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-red-dead.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "simulation"
     },
     {
       "id": 18,
@@ -160,7 +194,9 @@
       "amount": 215.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-borderlands.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "simulation"
     },
     {
       "id": 19,
@@ -169,7 +205,9 @@
       "amount": 235.0,
       "discount": 0.2,
       "img": "assets/images/banner-games/banner-red-dead.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "simulation"
     },
     {
       "id": 20,
@@ -178,7 +216,9 @@
       "amount": 235.0,
       "discount": 0.2,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "adventure"
     },
     {
       "id": 21,
@@ -187,7 +227,9 @@
       "amount": 235.0,
       "discount": 0.2,
       "img": "assets/images/banner-games/banner-resident-evil.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "mmorpg"
     },
     {
       "id": 22,
@@ -196,7 +238,9 @@
       "amount": 235.0,
       "discount": 0.2,
       "img": "assets/images/banner-games/banner-red-dead.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "mmorpg"
     },
     {
       "id": 23,
@@ -205,7 +249,9 @@
       "amount": 235.0,
       "discount": 0.2,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "mmorpg"
     },
     {
       "id": 24,
@@ -214,7 +260,9 @@
       "amount": 235.0,
       "discount": 0.2,
       "img": "assets/images/banner-games/banner-resident-evil.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "mmorpg"
     },
     {
       "id": 25,
@@ -223,7 +271,9 @@
       "amount": 235.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "free"
+      "type": "free",
+      "system": "windows",
+      "genre": "indie"
     },
     {
       "id": 26,
@@ -232,7 +282,9 @@
       "amount": 0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-red-dead.png",
-      "type": "free"
+      "type": "free",
+      "system": "windows",
+      "genre": "indie"
     },
     {
       "id": 27,
@@ -241,7 +293,9 @@
       "amount": 0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-borderlands.png",
-      "type": "free"
+      "type": "free",
+      "system": "windows",
+      "genre": "fps"
     },
     {
       "id": 28,
@@ -250,7 +304,9 @@
       "amount": 0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "upcoming"
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "fps"
     },
     {
       "id": 29,
@@ -259,7 +315,9 @@
       "amount": 0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-red-dead.png",
-      "type": "free"
+      "type": "free",
+      "system": "windows",
+      "genre": "indie"
     },
     {
       "id": 30,
@@ -268,7 +326,9 @@
       "amount": 0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-borderlands.png",
-      "type": "free"
+      "type": "free",
+      "system": "windows",
+      "genre": "rpg"
     }
   ],
   "slider": [
