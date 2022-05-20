@@ -1,10 +1,12 @@
 <div class="container">
-  <div class="scroll-conatiner">
-    <div class="scroll-area"
-      *ngFor="let game of dataGame"
-      id="game-{{ game.id }}"
-    >
-      <img src="{{ game.img }}">
+  <div class="arrow-prev">
+    <button (click)="getGameId(true)">
+      <img src="../../../../assets/icons/ic-arrow-dark.svg" />
+    </button>
+  </div>
+  <div class="scroll-conatiner" id="container">
+    <div class="scroll-area" *ngFor="let game of dataGame" [id]="game.id">
+      <img src="{{ game.img }}" />
       <div class="grid-scroll-area">
         <h3>{{ game.title }}</h3>
         <p>{{ game.author }}</p>
@@ -14,15 +16,18 @@
         <div class="flex-scroll-area">
           <span class="price">${{ game.amount }},00</span>
           <button class="btn-add">
-            <img class="icon-cart-add" src="../../../../assets/icons/ic-cart-add.svg">
+            <img
+              class="icon-cart-add"
+              src="../../../../assets/icons/ic-cart-add.svg"
+            />
           </button>
         </div>
       </div>
     </div>
   </div>
   <div class="arrow-next">
-    <button (click)="getGameId()">
-      <img src="../../../../assets/icons/ic-arrow-dark.svg">
+    <button (click)="getGameId(false)">
+      <img src="../../../../assets/icons/ic-arrow-dark.svg" />
     </button>
   </div>
 </div>

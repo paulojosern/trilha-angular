@@ -27,13 +27,14 @@ export class CarouselComponent implements OnInit {
     // })
   }
 
-  getGameId() {
-    this.id = this.dataGame.filter(gamesId =>
-      console.log('TESTE:', gamesId.id))
+  getGameId(value) {
+    const container = document.getElementById('container')
+    const content = container.querySelector('div').clientWidth
+    container.scrollBy(value ? content : -content, 0)
   }
 
   onNextClick(): void {
-    if(this.selectedIndex === this.dataGame.length - 1) {
+    if (this.selectedIndex === this.dataGame.length - 1) {
       this.selectedIndex = 0;
     } else {
       this.selectedIndex++;
