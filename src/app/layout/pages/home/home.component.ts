@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit {
 
   slider: IDataSlider[]
   popular: IDataSlider[]
-
   news: IDataCarousel[]
 
   constructor(private service: GamesService) { }
@@ -27,8 +26,13 @@ export class HomeComponent implements OnInit {
     this.service.getGames().subscribe(games => {
       this.news = games.filter(gamesNews => gamesNews.type === 'news')
       console.log(this.news)
-      this.news = games
     });
+
+    // this.service.getGames().subscribe(games => {
+    //   this.games = games
+    //   this.news = games.fiter(item => item.type === 'news')
+    //   console.log(this.news)
+    // })
 
     this.service.getSlider().subscribe(slider => {
 

@@ -1,80 +1,30 @@
 @import "../../../../styles.scss";
 
-// .container {
-//   max-width: 1043px;
-//   margin: auto;
-// }
+h3 {
+  color: #030517;
+  font-size: 16px;
+}
 
-// .carousel-container {
-//   width: 90%;
-//   display: flex;
-//   gap: 30px;
-//   justify-content: space-between;
-//   overflow: hidden;
-//   scroll-snap-type: y mandatory;
-//   // efeito de rolagem suave
-//   scroll-behavior: smooth;
-//   // garantindo que funcione em outros navegadores
-//   -webkit-scroll-snap-type: y mandatory;
-//   -ms-scroll-snap-type: y mandatory;
-// }
+p {
+  color: #BBBBBB;
+  font-size: 12px;
+}
 
-// .card-game-content {
-//   display: grid;
-// }
+button {
+  border: none;
+  cursor: pointer;
+}
 
-
-// .btn-carousel {
-//   position: absolute;
-//   // top: 0;
-//   // bottom: 0;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   // width: 15%;
-//   padding: 0;
-//   color: #fff;
-//   text-align: center;
-//   background: 0 0;
-//   border: 0;
-//   cursor: pointer;
-// }
-
-// .btn-next {
-//   right: 0;
-// }
-
-// .icon-carousel {
-//   color: red;
-//   font-size: 35px ;
-//   opacity: 0.5;
-//   transition: all 0.15s ease;
-// }
-
-.teste {
+.container {
   margin: auto;
-  max-width: 1043px;
+  width: 1042px;
+}
+
+.scroll-conatiner {
   display: flex;
-}
-
-.container {
-  margin: auto;
-  max-width: 963px;
-
-  ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-  }
-}
-
-.scroll-container,
-.scroll-area {
-  width: 100%;
-}
-
-.container {
-  position: relative;
+  gap: 81px;
+  justify-content: space-between;
+  // escondendo a barra de rolagem
   overflow: hidden;
   scroll-snap-type: x mandatory;
   // efeito de rolagem suave
@@ -84,65 +34,54 @@
   -ms-scroll-snap-type: x mandatory;
 }
 
-.game-content {
-
-  img {
-    border-radius: 4px 4px 0px 0px;
-    display: block;
-  }
-
-  .game-name {
-    color: #030517;
-    font-size: 16px;
-  }
-
-  .game-author {
-    color: #BBBBBB;
-    font-size: 12px;
-  }
+.scroll-area img {
+  border-radius: 4px 4px 0px 0px;
+  display: block;
 }
 
-.grid-game-content {
+.grid-scroll-area {
   background-color: $color-white;
   border-radius: 0px 0px 4px 4px;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   padding: 15px;
+}
 
-  .favorite {
-    display: grid;
-    justify-content: end;
-    grid-row: 1;
-    grid-column: 2;
+.btn-favorite {
+  background: transparent;
+  display: grid;
+  justify-content: end;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.flex-scroll-area {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 3px;
+  justify-content: end;
+
+  .price {
+    align-self: center;
+    background-color: $color-green-main;
+    border-radius: 2px;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0px 10px;
   }
 
-  .flex-content {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 3px;
-    place-content: end;
+  .btn-add {
+    align-self: center;
+    background: $color-gradient-pink;
+    border-radius: 2px;
 
-    .price {
-      background-color: $color-green-main;
-      border-radius: 2px;
-      color: $color-white;
-      text-align: center;
-      padding: 0px 10px;
-    }
-
-    .button-add {
-      background: $color-gradient-pink;
-      border: none;
-      border-radius: 2px;
-      display: grid;
-      cursor: pointer;
-
-      .image-button-add {
-        height: 25px;
-        width: 28px;
-        padding: 3px;
-      }
+    .icon-cart-add {
+      height: 20.5px;
+      width: 30px;
+      padding: 3px;
     }
   }
 }
