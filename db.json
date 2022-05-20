@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Population Zero",
       "author": "Rockstar Games",
-      "amount": 235.0,
+      "amount": 35.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-population-zero.png",
       "type": "news"
@@ -13,7 +13,7 @@
       "id": 2,
       "title": "Project Winter",
       "author": "Rockstar Games",
-      "amount": 215.0,
+      "amount": 15.0,
       "discount": 0,
       "img": " assets/images/banner-games/banner-project-winter.png",
       "type": "news"
@@ -22,7 +22,7 @@
       "id": 3,
       "title": "Borderlands 3",
       "author": "Other Ocean",
-      "amount": 215.0,
+      "amount": 75.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-borderlands.png",
       "type": "news"
@@ -49,12 +49,11 @@
       "id": 6,
       "title": "Borderlands 3",
       "author": "Other Ocean",
-      "amount": 215.0,
+      "amount": 85.0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-borderlands.png",
       "type": "news"
     },
-
     {
       "id": 7,
       "title": "Population Zero",
@@ -109,7 +108,6 @@
       "img": "assets/images/banner-games/banner-borderlands.png",
       "type": "popular"
     },
-
     {
       "id": 13,
       "title": "Population Zero",
@@ -164,7 +162,6 @@
       "img": "assets/images/banner-games/banner-borderlands.png",
       "type": "upcoming"
     },
-
     {
       "id": 19,
       "title": "Red Dead Redemption",
@@ -219,7 +216,6 @@
       "img": "assets/images/banner-games/banner-resident-evil.png",
       "type": "upcoming"
     },
-
     {
       "id": 25,
       "title": "Population Zero",
@@ -275,7 +271,6 @@
       "type": "free"
     }
   ],
-
   "slider": [
     {
       "id": 1,

@@ -9,27 +9,27 @@
               <legend class="title-marker">Price</legend>
               <label>
                 Under $50
-                <input type="checkbox" checked="checked" />
+                <input type="checkbox" (change)="onChange(50, $event)" />
               </label>
               <label>
                 Under $100
-                <input type="checkbox" />
+                <input type="checkbox" (change)="onChange(100, $event)" />
               </label>
               <label>
                 Under $150
-                <input type="checkbox" />
+                <input type="checkbox" (change)="onChange(150, $event)" />
               </label>
               <label>
                 Under $200
-                <input type="checkbox" />
+                <input type="checkbox" (change)="onChange(200, $event)" />
               </label>
               <label>
                 Free
-                <input type="checkbox" checked="checked" />
+                <input type="checkbox" />
               </label>
               <label>
                 Discounted
-                <input type="checkbox" checked="checked" />
+                <input type="checkbox" />
               </label>
             </fieldset>
           </form>
@@ -40,11 +40,21 @@
             <fieldset class="filter-sort-by">
               <legend class="title-marker">Sort by</legend>
               <div>
-                <input type="radio" id="test1" name="radio-group" checked />
+                <input
+                  type="radio"
+                  id="test1"
+                  name="radio-group"
+                  (change)="onSortBy(false)"
+                />
                 <label for="test1">High to Low</label>
               </div>
               <div>
-                <input type="radio" id="test2" name="radio-group" />
+                <input
+                  type="radio"
+                  id="test2"
+                  name="radio-group"
+                  (change)="onSortBy(true)"
+                />
                 <label for="test2">Low to High</label>
               </div>
             </fieldset>
@@ -120,6 +130,7 @@
             name=""
             id=""
             placeholder="Search for"
+            (input)="onSearch($event)"
           />
           <i class="ic ic-search-bar"></i>
         </section>
@@ -127,10 +138,7 @@
 
       <div class="grid-store-card-games">
         <section class="container-cards">
-          <div
-            class="card-game"
-            *ngFor="let game of games$ | async | slice: 0:12"
-          >
+          <div class="card-game" *ngFor="let game of games">
             <figure>
               <img src="{{ game.img }}" alt="" />
             </figure>
