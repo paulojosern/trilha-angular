@@ -28,6 +28,8 @@ export class HomeComponent implements OnInit {
       console.log(this.news)
     });
 
+
+
     // this.service.getGames().subscribe(games => {
     //   this.games = games
     //   this.news = games.fiter(item => item.type === 'news')

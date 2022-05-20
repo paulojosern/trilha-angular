@@ -2,6 +2,7 @@
   <div class="scroll-conatiner">
     <div class="scroll-area"
       *ngFor="let game of dataGame"
+      id="game-{{ game.id }}"
     >
       <img src="{{ game.img }}">
       <div class="grid-scroll-area">
@@ -20,7 +21,7 @@
     </div>
   </div>
   <div class="arrow-next">
-    <button>
+    <button (click)="getGameId()">
       <img src="../../../../assets/icons/ic-arrow-dark.svg">
     </button>
   </div>
