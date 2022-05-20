@@ -4,24 +4,25 @@
       <div class="grid-store-form-menu">
         <aside>
           <!-- Form Price -->
+
           <form action="">
             <fieldset class="filter-price">
               <legend class="title-marker">Price</legend>
               <label>
                 Under $50
-                <input type="checkbox" (change)="onChange(50, $event)" />
+                <input type="checkbox" (change)="onChangePrice(50, $event)" />
               </label>
               <label>
                 Under $100
-                <input type="checkbox" (change)="onChange(100, $event)" />
+                <input type="checkbox" (change)="onChangePrice(100, $event)" />
               </label>
               <label>
                 Under $150
-                <input type="checkbox" (change)="onChange(150, $event)" />
+                <input type="checkbox" (change)="onChangePrice(150, $event)" />
               </label>
               <label>
                 Under $200
-                <input type="checkbox" (change)="onChange(200, $event)" />
+                <input type="checkbox" (change)="onChangePrice(200, $event)" />
               </label>
               <label>
                 Free
@@ -67,15 +68,24 @@
               <legend class="title-marker">System</legend>
               <label>
                 Windows
-                <input type="checkbox" checked="checked" />
+                <input
+                  type="checkbox"
+                  (change)="onChangeSystem('windows', $event)"
+                />
               </label>
               <label>
                 Linux
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  (change)="onChangeSystem('Linux', $event)"
+                />
               </label>
               <label>
                 Mac
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  (change)="onChangeSystem('mac', $event)"
+                />
               </label>
             </fieldset>
           </form>

@@ -12,6 +12,7 @@ export class StoreComponent implements OnInit {
   games: any[];
   gamesBackup: any[];
   priceList = [];
+  systemList = [];
 
   constructor(private service: GamesService) {}
 
@@ -24,15 +25,44 @@ export class StoreComponent implements OnInit {
     });
   }
 
-  onChange(value, e): void {
+  onChangePrice(value, e): void {
     e.target.checked
       ? this.priceList.push(value)
       : (this.priceList = this.priceList.filter((i) => i !== value));
 
     this.games = !this.priceList.length
-      ? (this.games = this.gamesBackup)
+      ? this.gamesBackup
       : this.gamesBackup.filter((i) =>
           this.priceList.some((a) => a > i.amount)
+        );
+  }
+
+  // Metodo que recebe um sistema para aplicar no filtro
+
+  //  --- system  = sistema operacional que deve ser colocado no filtro
+  //  --- e       = dados do evento (checkbox marcada/desmarcada)
+
+  onChangeSystem(system, e): void {
+    // verifica a propriedade target.checked do evento,
+    // TRUE o checkbox está marcado,
+    // FALSE o checkbox não está marcado
+
+    e.target.checked
+      ? // se estiver marcado, coloque o sistema selecionado na lista do filtro
+        this.systemList.push(system)
+      : // se for desmarcado, remova o sistema da lista de filtro
+        (this.systemList = this.systemList.filter((s) => s !== system));
+
+    // atualizando a lista que está sendo rendenizada
+
+    // verificado se a lista de sistemas do filtro estiver vazia
+    this.games = !this.systemList.length
+      ? // se vazia, atribuir a lista GamesBackup que contem toda a lista de jogos completa
+        this.gamesBackup
+      : // se possuir algum sistema no filtro ele verifica, jogo a jogo e insere na lista para exibir
+        this.gamesBackup.filter((game) =>
+          // verifica se o sistema do jogo é o mesmo da lista
+          this.systemList.some((s) => s === game.system)
         );
   }
 
