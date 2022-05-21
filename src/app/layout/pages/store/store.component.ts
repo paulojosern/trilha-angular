@@ -26,7 +26,7 @@ export class StoreComponent implements OnInit {
     });
   }
 
-  onChangePrice(value, e): void {
+  onChangePrice(value: number, e): void {
     e.target.checked
       ? this.priceList.push(value)
       : (this.priceList = this.priceList.filter((i) => i !== value));
@@ -65,7 +65,7 @@ export class StoreComponent implements OnInit {
   //  --- system  = sistema operacional que deve ser colocado no filtro
   //  --- e       = dados do evento (checkbox marcada/desmarcada)
 
-  onChangeSystem(system, e): void {
+  onChangeSystem(system: string, e): void {
     // verifica a propriedade target.checked do evento,
     // TRUE o checkbox está marcado,
     // FALSE o checkbox não está marcado
@@ -87,9 +87,11 @@ export class StoreComponent implements OnInit {
           // verifica se o sistema do jogo é o mesmo da lista
           this.systemList.some((s) => s === game.system.toLowerCase())
         );
+
+    console.log(typeof e);
   }
 
-  onChangeGenre(genre, e): void {
+  onChangeGenre(genre: string, e): void {
     e.target.checked
       ? this.genreList.push(genre.toLowerCase())
       : (this.genreList = this.genreList.filter((g) => g !== genre));
