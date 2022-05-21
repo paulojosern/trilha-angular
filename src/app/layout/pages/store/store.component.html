@@ -97,35 +97,59 @@
               <legend class="title-marker">Genre</legend>
               <label>
                 Action
-                <input type="checkbox" checked="checked" />
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('Action', $event)"
+                />
               </label>
               <label>
                 Adventure
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('Adventure', $event)"
+                />
               </label>
               <label>
                 FPS
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('FPS', $event)"
+                />
               </label>
               <label>
                 MMORPG
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('MMORPG', $event)"
+                />
               </label>
               <label>
                 RPG
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('RPG', $event)"
+                />
               </label>
               <label>
                 Indie
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('Indie', $event)"
+                />
               </label>
               <label>
                 Shooters
-                <input type="checkbox" checked="checked" />
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('Shooters', $event)"
+                />
               </label>
               <label>
                 Simulation
-                <input type="checkbox" checked="checked" />
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('simulation', $event)"
+                />
               </label>
             </fieldset>
           </form>
