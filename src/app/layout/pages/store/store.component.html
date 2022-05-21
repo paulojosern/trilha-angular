@@ -171,7 +171,7 @@
       </div>
 
       <div class="grid-store-card-games">
-        <section class="container-cards">
+        <section class="container-cards" *ngIf="games; else pesquisaInvalida">
           <div class="card-game" *ngFor="let game of games">
             <figure>
               <img src="{{ game.img }}" alt="" />
@@ -194,6 +194,12 @@
             </div>
           </div>
         </section>
+        <ng-template #pesquisaInvalida>
+          <div class="pesquisaInvalida">
+            <img src="../../../../assets/images/404.png" alt="" />
+            <h3>Não existem jogos para a pesuisa: {{ pesquisa }}</h3>
+          </div>
+        </ng-template>
       </div>
 
       <div class="grid-store-empty-space-1"></div>

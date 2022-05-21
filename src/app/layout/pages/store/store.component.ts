@@ -15,6 +15,8 @@ export class StoreComponent implements OnInit {
   systemList = [];
   genreList = [];
 
+  pesquisa: string;
+
   constructor(private service: GamesService) {}
 
   ngOnInit(): void {
@@ -110,6 +112,7 @@ export class StoreComponent implements OnInit {
     const result = this.gamesBackup.filter((i) =>
       i.title.toLowerCase().includes(e.target.value.toLowerCase())
     );
-    this.games = !result?.length ? this.gamesBackup : result;
+    this.pesquisa = e.target.value;
+    this.games = !result?.length ? null : result;
   }
 }

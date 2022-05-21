@@ -196,6 +196,20 @@ legend {
   align-items: center;
 }
 
+.pesquisaInvalida {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 7rem;
+}
+
+.pesquisaInvalida h3 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .search-bar i {
   width: 1.7rem;
   height: 1.7rem;
