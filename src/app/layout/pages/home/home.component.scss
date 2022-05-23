@@ -24,9 +24,22 @@
 
 .banner {
   @extend %banner;
+}
+
+.banner-popular {
   background: $color-gradient-banner, url('../../../../assets/images/big-banner-games/banner-red-dead.png') no-repeat;
 }
 
-.banner-content {
-  @extend %banner-content-right
+.banner-upcoming {
+  background: $color-gradient-banner, url('../../../../assets/images/big-banner-games/banner-borderlands.png') no-repeat;
+  margin: 60px auto 30px auto;
+}
+
+.banner-content-left {
+  @extend %banner-content;
+  justify-items: start
+}
+
+.banner-content-right {
+  @extend %banner-content;
 }

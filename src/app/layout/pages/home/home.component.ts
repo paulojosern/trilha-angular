@@ -16,8 +16,10 @@ export class HomeComponent implements OnInit {
   games: any[]
 
   slider: IDataSlider[]
-  popular: IDataCarousel[]
   news: IDataCarousel[]
+  popular: IDataCarousel[]
+  upcoming: IDataCarousel[]
+  upcomingDiscount: IDataCarousel[]
 
   constructor(private service: GamesService) { }
 
@@ -29,7 +31,14 @@ export class HomeComponent implements OnInit {
       console.log(this.news)
 
       this.popular = games.filter(gamesPopular => gamesPopular.type === 'popular')
-      console.log("TESTE:", this.popular)
+      console.log(this.popular)
+
+      this.upcoming = games.filter(gamesUpcoming => gamesUpcoming.type === 'upcoming' && gamesUpcoming.discount === 0);
+
+      this.upcomingDiscount = games.filter(gamesDiscount => gamesDiscount.type === 'upcoming' && gamesDiscount.discount > 0);
+
+      console.log(this.upcoming)
+      console.log(this.upcomingDiscount)
     });
 
     this.service.getSlider().subscribe(slider => {

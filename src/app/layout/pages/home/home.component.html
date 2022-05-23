@@ -25,9 +25,9 @@
     <div class="h1-layout">
       <h1 class="most-popular">Most Popular</h1>
     </div>
-    <div class="banner">
+    <div class="banner banner-popular">
       <img src="../../../../assets/images/big-banner-games/banner-red-dead-woman.png" alt="">
-      <div class="banner-content">
+      <div class="banner-content-right">
         <h2>Read Dead it’s back</h2>
         <p>Come see John’s new adventures</p>
         <a href="#">Buy now</a>
@@ -40,14 +40,19 @@
     <div class="h1-layout">
       <h1 class="upcoming">Upcoming</h1>
     </div>
-    <div class="banner">
-      <img src="../../../../assets/images/big-banner-games/banner-red-dead-woman.png" alt="">
-      <div class="banner-content">
-        <h2>Read Dead it’s back</h2>
-        <p>Come see John’s new adventures</p>
+
+    <app-carousel *ngIf="upcoming" [dataGame]="upcoming"></app-carousel>
+
+    <div class="banner banner-upcoming">
+      <div class="banner-content-left">
+        <h2>Borderlands 3</h2>
+        <p>Borderlands it’s back. </p>
         <a href="#">Buy now</a>
       </div>
+      <img src="../../../../assets/images/big-banner-games/banner-borderlands-robot.png" alt="">
     </div>
+
+    <app-carousel-discount *ngIf="upcomingDiscount" [discountGame]="upcomingDiscount"></app-carousel-discount>
   </section>
 
 </main>

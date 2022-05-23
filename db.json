@@ -169,8 +169,8 @@
       "id": 19,
       "title": "Red Dead Redemption",
       "author": "Rockstar Games",
-      "amount": 235.0,
-      "discount": 0.2,
+      "amount": 280.0,
+      "discount": 0.4,
       "img": "assets/images/banner-games/banner-red-dead.png",
       "type": "upcoming"
     },
@@ -178,7 +178,7 @@
       "id": 20,
       "title": "Population Zero",
       "author": "Rockstar Games",
-      "amount": 235.0,
+      "amount": 135.0,
       "discount": 0.2,
       "img": "assets/images/banner-games/banner-population-zero.png",
       "type": "upcoming"
@@ -187,8 +187,8 @@
       "id": 21,
       "title": "Resident Evil 3",
       "author": "Rockstar Games",
-      "amount": 235.0,
-      "discount": 0.2,
+      "amount": 340.0,
+      "discount": 0.5,
       "img": "assets/images/banner-games/banner-resident-evil.png",
       "type": "upcoming"
     },
@@ -196,8 +196,8 @@
       "id": 22,
       "title": "Red Dead Redemption",
       "author": "Rockstar Games",
-      "amount": 235.0,
-      "discount": 0.2,
+      "amount": 275.0,
+      "discount": 0.4,
       "img": "assets/images/banner-games/banner-red-dead.png",
       "type": "upcoming"
     },
@@ -205,8 +205,8 @@
       "id": 23,
       "title": "Population Zero",
       "author": "Rockstar Games",
-      "amount": 235.0,
-      "discount": 0.2,
+      "amount": 140.0,
+      "discount": 0.1,
       "img": "assets/images/banner-games/banner-population-zero.png",
       "type": "upcoming"
     },
@@ -214,8 +214,8 @@
       "id": 24,
       "title": "Resident Evil 3",
       "author": "Rockstar Games",
-      "amount": 235.0,
-      "discount": 0.2,
+      "amount": 90.0,
+      "discount": 0.1,
       "img": "assets/images/banner-games/banner-resident-evil.png",
       "type": "upcoming"
     },
@@ -254,7 +254,7 @@
       "amount": 0,
       "discount": 0,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "upcoming"
+      "type": "free"
     },
     {
       "id": 29,
