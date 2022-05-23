@@ -47,7 +47,7 @@ button {
   background-color: $color-white;
   border-radius: 0px 0px 4px 4px;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: 190px 70px;
   grid-template-rows: repeat(2, auto);
   padding: 15px;
 }

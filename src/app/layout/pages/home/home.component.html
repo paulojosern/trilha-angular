@@ -14,15 +14,39 @@
 
   <!-- NEWS CAROUSEL -->
   <section>
-    <div class="title">
+    <div class="h1-layout">
       <h1 class="news">News</h1>
     </div>
     <app-carousel *ngIf="news" [dataGame]="news"></app-carousel>
   </section>
 
   <section>
-    <div class="title">
+    <!-- BANNER -->
+    <div class="h1-layout">
       <h1 class="most-popular">Most Popular</h1>
+    </div>
+    <div class="banner">
+      <img src="../../../../assets/images/big-banner-games/banner-red-dead-woman.png" alt="">
+      <div class="banner-content">
+        <h2>Read Dead it’s back</h2>
+        <p>Come see John’s new adventures</p>
+        <a href="#">Buy now</a>
+      </div>
+    </div>
+    <app-carousel *ngIf="popular" [dataGame]="popular"></app-carousel>
+  </section>
+
+  <section>
+    <div class="h1-layout">
+      <h1 class="upcoming">Upcoming</h1>
+    </div>
+    <div class="banner">
+      <img src="../../../../assets/images/big-banner-games/banner-red-dead-woman.png" alt="">
+      <div class="banner-content">
+        <h2>Read Dead it’s back</h2>
+        <p>Come see John’s new adventures</p>
+        <a href="#">Buy now</a>
+      </div>
     </div>
   </section>
 

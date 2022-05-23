@@ -11,9 +11,6 @@ export class CarouselComponent implements OnInit {
 
   @Input() dataGame: IDataCarousel[];
 
-  selectedIndex = 0;
-  id: IDataCarousel[];
-
   constructor() { }
 
   ngOnInit(): void {
@@ -22,7 +19,7 @@ export class CarouselComponent implements OnInit {
   getGameId(value) {
     const container = document.getElementById('container')
     let content = container.querySelector('div').clientWidth
-    content+=80;
+    content+=81;
     container.scrollBy(value ? content : -content, 0)
   }
 }
