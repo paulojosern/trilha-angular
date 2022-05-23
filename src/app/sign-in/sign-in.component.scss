@@ -31,7 +31,7 @@ button a {
   color: white;
   font: weight 600px;
   font-family: "Barrio";
-  font-size: 2em;
+  font-size: 4em;
   font-weight: bold;
 }
 .ret {
@@ -46,14 +46,14 @@ button a {
 
   color: white;
   font-family: "Barrio";
-  font-size: 1em;
+  font-size: 2em;
   font: weight 200;
 }
 
 .sig {
   color: black;
   font-family: "Barrio";
-  font-size: 1.2em;
+  font-size: 2.5em;
   font: weight 300;
 }
 
@@ -93,7 +93,8 @@ input#email {
 }
 
 .esq-senha {
-  font-size: 0.8em;
+  color: black;
+  font-size: 1em;
   margin-left: 40%;
   font-style: bold;
 }
@@ -111,7 +112,8 @@ input#email {
 }
 
 .cad {
-  font-size: 0.8em;
+  color: black;
+  font-size: 1.2em;
   margin-left: 35%;
   display: inline;
   float: left;
@@ -145,7 +147,7 @@ input#email {
 }
 
 .login {
-  padding-bottom: 13.5%;
+  padding-bottom: 15%;
   background-color: white;
   width: 50%;
   height: 100%;

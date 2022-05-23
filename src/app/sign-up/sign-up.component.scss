@@ -7,6 +7,7 @@ button a {
 }
 
 .first {
+  padding-bottom: 2.5%;
   width: 50%;
 
   background-image: url(../../assets/images/log-img.png),
@@ -32,7 +33,7 @@ button a {
   color: white;
   font: weight 600px;
   font-family: "Barrio";
-  font-size: 2em;
+  font-size: 4em;
   font-weight: bold;
 }
 .ret {
@@ -47,14 +48,14 @@ button a {
 
   color: white;
   font-family: "Barrio";
-  font-size: 1em;
+  font-size: 2em;
   font: weight 200;
 }
 
 .sig {
   color: black;
   font-family: "Barrio";
-  font-size: 1.2em;
+  font-size: 2.5em;
   font: weight 300;
 }
 
@@ -63,8 +64,7 @@ button a {
   color: white;
   /*margin-top: 80%;*/
   text-align: center;
-  padding-top: 55%;
-  padding-bottom: 5%;
+  padding-top: 54%;
 }
 
 .form input {
@@ -91,7 +91,8 @@ button a {
 }
 
 .cad {
-  font-size: 0.8em;
+  color: black;
+  font-size: 1.2em;
   margin-left: 35%;
   display: inline;
   float: left;
@@ -125,7 +126,7 @@ button a {
 }
 
 .login {
-  padding-bottom: 6%;
+  padding-bottom: 9%;
   background-color: white;
   width: 50%;
   height: 100%;
