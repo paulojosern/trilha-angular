@@ -2,8 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
-##  server
+## server
 
-Instalar global o json server `npm install -g json-server` 
+Instalar global o json server `npm install -g json-server`
 
-Comando para levantar o servidor `json-server --watch db.json` 
+Comando para levantar o servidor `json-server --watch db.json`
