@@ -12,7 +12,6 @@
     <app-slider *ngIf="slider" [data]="slider"></app-slider>
   </section>
 
-  <!-- NEWS CAROUSEL -->
   <section>
     <div class="h1-layout">
       <h1 class="news">News</h1>
@@ -21,7 +20,6 @@
   </section>
 
   <section>
-    <!-- BANNER -->
     <div class="h1-layout">
       <h1 class="most-popular">Most Popular</h1>
     </div>
@@ -53,6 +51,20 @@
     </div>
 
     <app-carousel-discount *ngIf="upcomingDiscount" [discountGame]="upcomingDiscount"></app-carousel-discount>
+  </section>
+
+  <section>
+    <div class="h1-layout">
+      <h1 class="free-games">Free games</h1>
+    </div>
+    <div class="banner banner-free-games">
+      <img src="../../../../assets/images/big-banner-games/banner-cs-go-man.png" alt="">
+      <div class="banner-content-right">
+        <h2>CS:GO, the most classic game </h2>
+        <a href="#">Download now</a>
+      </div>
+    </div>
+    <app-carousel *ngIf="freeGame" [dataGame]="freeGame"></app-carousel>
   </section>
 
 </main>

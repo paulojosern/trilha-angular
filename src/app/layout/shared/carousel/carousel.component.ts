@@ -10,6 +10,7 @@ import { IDataCarousel } from './../../../modules/idata-carousel';
 export class CarouselComponent implements OnInit {
 
   @Input() dataGame: IDataCarousel[];
+  @Input() news: IDataCarousel[];
 
   constructor() { }
 

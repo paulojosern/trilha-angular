@@ -35,6 +35,10 @@
   margin: 60px auto 30px auto;
 }
 
+.banner-free-games {
+  background: $color-gradient-banner, url('../../../../assets/images/big-banner-games/banner-cs-go.png') no-repeat;
+}
+
 .banner-content-left {
   @extend %banner-content;
   justify-items: start
