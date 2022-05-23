@@ -21,7 +21,7 @@ button {
   width: 1042px;
   display: grid;
   align-items: center;
-  grid-template-columns: 50px 1fr 50px;
+  // grid-template-columns: 50px 1fr 50px;
 }
 
 .scroll-conatiner {
@@ -93,6 +93,17 @@ button {
   position: absolute;
   top: 30%;
   right: -65px;
+  font-size: 1rem;
+  text-align: right;
+  z-index: 2;
+  flex-direction: column;
+}
+
+.arrow-prev {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 28%;
+  left: -65px;
   font-size: 1rem;
   text-align: right;
   z-index: 2;
