@@ -1,16 +1,23 @@
 @import "../../../../styles.scss";
 
-.news {
+.title {
   width: 1042px;
   margin: 70px auto 30px auto;
 
   h1 {
-    color: #030517;
     font-size: 3.2rem;
     margin-left: 15px;
   }
 
   h1:before {
     @extend %detail-before-green;
+  }
+
+  .news {
+    color: #030517;
+  }
+
+  .most-popular {
+    color: $color-white;
   }
 }
