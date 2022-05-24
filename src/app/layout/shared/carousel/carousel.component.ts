@@ -10,6 +10,10 @@ import { IDataCarousel } from './../../../modules/idata-carousel';
 export class CarouselComponent implements OnInit {
 
   @Input() dataGame: IDataCarousel[];
+  @Input() name: string;
+  @Input() isLabel: boolean = false
+
+
 
   constructor() { }
 
@@ -17,9 +21,9 @@ export class CarouselComponent implements OnInit {
   }
 
   scrollBy(value) {
-    const container = document.getElementById('container')
+    const container = document.getElementById(this.name + 'container')
     let content = container.querySelector('div').clientWidth
-    content+=81;
+    content += 81;
     container.scrollBy(value ? content : -content, 0)
   }
 }

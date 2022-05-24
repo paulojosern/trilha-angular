@@ -42,6 +42,19 @@ export class HomeComponent implements OnInit {
       this.upcomingDiscount = games.filter(gamesDiscount => gamesDiscount.type === 'upcoming' && gamesDiscount.discount > 0);
       // Free games
       this.freeGame = games.filter(gamesFree => gamesFree.type === 'free');
+      // this.getDataSlider('news', games, false, false)
+      // this.getDataSlider('popular', games, false, false)
+      // this.getDataSlider('upcoming', games, true, false)
+      // this.getDataSlider('upcomingDiscount', games, false, true)
+      // this.getDataSlider('freeGame', games, false, false)
+
     });
+
+
+  }
+
+  getDataSlider(list, data, equal, more): void {
+    console.log(data.filter(i => i.type === list))
+    this[list] = data.filter(i => i.type === list && (equal && i.discount === 0) && (more && i.discount > 0))
   }
 }

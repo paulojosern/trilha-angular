@@ -17,7 +17,7 @@
     <div class="h1-layout">
       <h1 class="news">News</h1>
     </div>
-    <app-carousel *ngIf="news" [dataGame]="news"></app-carousel>
+    <app-carousel *ngIf="news" [dataGame]="news" name="name"></app-carousel>
   </section>
 
   <section>
@@ -25,14 +25,21 @@
       <h1 class="most-popular">Most Popular</h1>
     </div>
     <div class="banner banner-popular">
-      <img src="../../../../assets/images/big-banner-games/banner-red-dead-woman.png" alt="">
+      <img
+        src="../../../../assets/images/big-banner-games/banner-red-dead-woman.png"
+        alt=""
+      />
       <div class="banner-content-right">
         <h2>Read Dead it’s back</h2>
         <p>Come see John’s new adventures</p>
         <a href="#">Buy now</a>
       </div>
     </div>
-    <app-carousel *ngIf="popular" [dataGame]="popular"></app-carousel>
+    <app-carousel
+      *ngIf="popular"
+      [dataGame]="popular"
+      name="popular"
+    ></app-carousel>
   </section>
 
   <section>
@@ -40,18 +47,29 @@
       <h1 class="upcoming">Upcoming</h1>
     </div>
 
-    <app-carousel *ngIf="upcoming" [dataGame]="upcoming"></app-carousel>
+    <app-carousel
+      *ngIf="upcoming"
+      [dataGame]="upcoming"
+      name="upcoming"
+    ></app-carousel>
 
     <div class="banner banner-upcoming">
       <div class="banner-content-left">
         <h2>Borderlands 3</h2>
-        <p>Borderlands it’s back. </p>
+        <p>Borderlands it’s back.</p>
         <a href="#">Buy now</a>
       </div>
-      <img src="../../../../assets/images/big-banner-games/banner-borderlands-robot.png" alt="">
+      <img
+        src="../../../../assets/images/big-banner-games/banner-borderlands-robot.png"
+        alt=""
+      />
     </div>
 
-    <app-carousel-discount *ngIf="upcomingDiscount" [discountGame]="upcomingDiscount"></app-carousel-discount>
+    <app-carousel
+      *ngIf="upcomingDiscount"
+      [dataGame]="upcomingDiscount"
+      isLabel="true"
+    ></app-carousel>
   </section>
 
   <section>
@@ -59,13 +77,15 @@
       <h1 class="free-games">Free games</h1>
     </div>
     <div class="banner banner-free-games">
-      <img src="../../../../assets/images/big-banner-games/banner-cs-go-man.png" alt="">
+      <img
+        src="../../../../assets/images/big-banner-games/banner-cs-go-man.png"
+        alt=""
+      />
       <div class="banner-content-right">
-        <h2>CS:GO, the most classic game </h2>
+        <h2>CS:GO, the most classic game</h2>
         <a href="#">Download now</a>
       </div>
     </div>
     <app-carousel *ngIf="freeGame" [dataGame]="freeGame"></app-carousel>
   </section>
-
 </main>

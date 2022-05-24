@@ -5,9 +5,12 @@
     </button>
   </div>
 
-  <div class="scroll-conatiner" id="container">
+  <div class="scroll-conatiner" [id]="name + 'container'">
     <div class="scroll-area" *ngFor="let game of dataGame" [id]="game.id">
-      <img src="{{ game.img }}"/>
+      <span class="discount" *ngIf="isLabel">
+        {{ game.discount * 100 }}% OFF
+      </span>
+      <img src="{{ game.img }}" />
       <div class="grid-scroll-area">
         <h3>{{ game.title }}</h3>
         <p>{{ game.author }}</p>
