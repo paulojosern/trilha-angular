@@ -30,17 +30,18 @@ export class HomeComponent implements OnInit {
     this.service.getSlider().subscribe(slider => {
       this.slider = slider
     });
-    
+
     this.service.getGames().subscribe(games => {
+      // News
       this.news = games.filter(gamesNews => gamesNews.type === 'news')
-
+      // Most popular
       this.popular = games.filter(gamesPopular => gamesPopular.type === 'popular')
-
+      // Upcoming
       this.upcoming = games.filter(gamesUpcoming => gamesUpcoming.type === 'upcoming' && gamesUpcoming.discount === 0);
-
+      // Upcoming - Games with discount
       this.upcomingDiscount = games.filter(gamesDiscount => gamesDiscount.type === 'upcoming' && gamesDiscount.discount > 0);
-
-      this.freeGame = games.filter(gamesFree => gamesFree.type === 'free')
+      // Free games
+      this.freeGame = games.filter(gamesFree => gamesFree.type === 'free');
     });
   }
 }

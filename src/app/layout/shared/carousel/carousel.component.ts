@@ -10,14 +10,13 @@ import { IDataCarousel } from './../../../modules/idata-carousel';
 export class CarouselComponent implements OnInit {
 
   @Input() dataGame: IDataCarousel[];
-  @Input() news: IDataCarousel[];
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  getGameId(value) {
+  scrollBy(value) {
     const container = document.getElementById('container')
     let content = container.querySelector('div').clientWidth
     content+=81;

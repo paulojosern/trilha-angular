@@ -1,13 +1,13 @@
 <div class="container">
   <div class="arrow-prev">
-    <button (click)="getGameId(false)">
+    <button (click)="scrollBy(false)">
       <img src="../../../../assets/icons/ic-arrow-dark.svg" />
     </button>
   </div>
 
   <div class="scroll-conatiner" id="container">
     <div class="scroll-area" *ngFor="let game of dataGame" [id]="game.id">
-      <img src="{{ game.img }}" />
+      <img src="{{ game.img }}"/>
       <div class="grid-scroll-area">
         <h3>{{ game.title }}</h3>
         <p>{{ game.author }}</p>
@@ -28,7 +28,7 @@
   </div>
 
   <div class="arrow-next">
-    <button (click)="getGameId(true)">
+    <button (click)="scrollBy(true)">
       <img src="../../../../assets/icons/ic-arrow-dark.svg" />
     </button>
   </div>
