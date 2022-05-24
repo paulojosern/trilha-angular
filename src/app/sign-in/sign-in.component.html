@@ -23,11 +23,26 @@
         <img class="ret" src="../../assets/images/ret.png" />
         <h3 class="sig">Sign in</h3>
       </div>
-      <form class="form">
-        <input type="text" id="email" name="fname" placeholder=" Email" />
+
+      <form class="form" #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder=" Email"
+          ngModel
+          required
+        />
         <br />
         <br />
-        <input type="text" id="senha" name="lname" placeholder=" Password" />
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          placeholder=" Password"
+          ngModel
+          required
+        />
       </form>
 
       <div class="esq-senha">
@@ -35,7 +50,7 @@
       </div>
       <br /><br />
 
-      <button class="submit" form="form" style="color: black">
+      <button type="submit" class="submit" form="form" style="color: black">
         <a routerLink="">Sign in now</a>
       </button>
 
