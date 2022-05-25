@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   popular: IDataCarousel[];
   upcoming: IDataCarousel[];
   upcomingDiscount: IDataCarousel[];
-  freeGame: IDataCarousel[];
+  free: IDataCarousel[];
 
   constructor(private service: GamesService) {}
 
@@ -31,23 +31,24 @@ export class HomeComponent implements OnInit {
     });
 
     this.service.getGames().subscribe((games) => {
-      // ---- Exemplo de filtro sem o metodo getDataSlider
-      // this.upcomingDiscount = games.filter(
-      //   (gamesDiscount) =>
-      //     gamesDiscount.type === 'upcoming' && gamesDiscount.discount > 0
-      // );
-
-      this.getDataSlider('news', games, false);
-      this.getDataSlider('popular', games, false);
-      this.getDataSlider('upcoming', games, false);
-      this.getDataSlider('upcomingDiscount', games, true);
-      this.getDataSlider('freeGame', games, false);
+      this.getDataSlider('news', games);
+      this.getDataSlider('popular', games);
+      this.getDataSlider('upcoming', games);
+      this.getDataSlider('upcomingDiscount', games);
+      this.getDataSlider('free', games);
     });
   }
 
-  getDataSlider(list, data, discount): void {
-    this[list] = data.filter((i) =>
-      i.type === list && discount == false ? i.discount === 0 : i.discount > 0
-    );
+  getDataSlider(list, data): void {
+    this[list] = data.filter((i) =>{
+      // i.type === list && discount === false ? i.discount === 0 : i.discount > 0
+      if (i.type === list) {
+        if (i.discount > 0) {
+          return i;
+        }
+       return i;
+      }
+    });
+    console.log(this[list])
   }
 }
