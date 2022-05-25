@@ -17,7 +17,7 @@
     <div class="h1-layout">
       <h1 class="news">News</h1>
     </div>
-    <app-carousel *ngIf="news" [dataGame]="news" name="name"></app-carousel>
+    <app-carousel *ngIf="news" [dataGame]="news" name="news"></app-carousel>
   </section>
 
   <section>
@@ -68,7 +68,8 @@
     <app-carousel
       *ngIf="upcomingDiscount"
       [dataGame]="upcomingDiscount"
-      isLabel="true"
+      isDiscount="true"
+      toDisplay ="false"
     ></app-carousel>
   </section>
 
@@ -86,6 +87,11 @@
         <a href="#">Download now</a>
       </div>
     </div>
-    <app-carousel *ngIf="freeGame" [dataGame]="freeGame"></app-carousel>
+    <app-carousel
+      *ngIf="freeGame"
+      [dataGame]="freeGame"
+      name="free"
+      toDisplay="false"
+    ></app-carousel>
   </section>
 </main>
