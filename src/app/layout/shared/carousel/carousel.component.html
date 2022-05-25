@@ -2,7 +2,8 @@
   <div class="arrow-prev">
     <button (click)="scrollBy(false)">
       <!-- <img src="../../../../assets/icons/ic-arrow-dark.svg" /> -->
-      <i class="ic ic-arrow-next icon-arrow"></i>
+      <i *ngIf="!arrowLight" class="ic ic-arrow-next icon-arrow"></i>
+      <i *ngIf="arrowLight" class="ic ic-arrow-next-light icon-arrow"></i>
     </button>
   </div>
 
@@ -37,7 +38,8 @@
   <div class="arrow-next">
     <button (click)="scrollBy(true)">
       <!-- <img src="../../../../assets/icons/ic-arrow-dark.svg" /> -->
-      <i class="ic ic-arrow-next icon-arrow"></i>
+      <i *ngIf="!arrowLight" class="ic ic-arrow-next icon-arrow"></i>
+      <i *ngIf="arrowLight" class="ic ic-arrow-next-light icon-arrow"></i>
     </button>
   </div>
 </div>

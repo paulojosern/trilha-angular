@@ -17,7 +17,11 @@
     <div class="h1-layout">
       <h1 class="news">News</h1>
     </div>
-    <app-carousel *ngIf="news" [dataGame]="news" name="news"></app-carousel>
+    <app-carousel
+      *ngIf="news"
+      [dataGame]="news"
+      name="news"
+    ></app-carousel>
   </section>
 
   <section>
@@ -39,6 +43,7 @@
       *ngIf="popular"
       [dataGame]="popular"
       name="popular"
+      arrowLight="true"
     ></app-carousel>
   </section>
 
@@ -51,6 +56,7 @@
       *ngIf="upcoming"
       [dataGame]="upcoming"
       name="upcoming"
+      arrowLight="true"
     ></app-carousel>
 
     <div class="banner banner-upcoming">
@@ -70,28 +76,32 @@
       [dataGame]="upcomingDiscount"
       isDiscount="true"
       toDisplay ="false"
+      arrowLight="true"
     ></app-carousel>
   </section>
 
   <section>
-    <div class="h1-layout">
-      <h1 class="free-games">Free games</h1>
-    </div>
-    <div class="banner banner-free-games">
-      <img
-        src="../../../../assets/images/big-banner-games/banner-cs-go-man.png"
-        alt=""
-      />
-      <div class="banner-content-right">
-        <h2>CS:GO, the most classic game</h2>
-        <a href="#">Download now</a>
+    <div class="section-free-games">
+      <div class="h1-layout">
+        <h1 class="free-games">Free games</h1>
       </div>
+      <div class="banner banner-free-games">
+        <img
+          src="../../../../assets/images/big-banner-games/banner-cs-go-man.png"
+          alt=""
+        />
+        <div class="banner-content-right">
+          <h2>CS:GO, the most classic game</h2>
+          <a href="#">Download now</a>
+        </div>
+      </div>
+      <app-carousel
+        *ngIf="free"
+        [dataGame]="free"
+        name="free"
+        toDisplay="false"
+        arrowLight="true"
+      ></app-carousel>
     </div>
-    <app-carousel
-      *ngIf="free"
-      [dataGame]="free"
-      name="free"
-      toDisplay="false"
-    ></app-carousel>
   </section>
 </main>

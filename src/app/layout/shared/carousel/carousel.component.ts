@@ -13,6 +13,7 @@ export class CarouselComponent implements OnInit {
   @Input() name: string;
   @Input() isDiscount: boolean = false;
   @Input() toDisplay: boolean = false;
+  @Input() arrowLight: boolean = false;
 
   constructor() { }
 
