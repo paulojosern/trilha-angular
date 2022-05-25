@@ -8,53 +8,46 @@ import { IDataSlider } from 'src/app/modules/idata-slider';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  games$: Observable<any>; // Opção usando observable
+  games: any[];
 
-  games$: Observable<any>  // Opção usando observable
-  games: any[]
+  slider: IDataSlider[];
+  news: IDataCarousel[];
+  popular: IDataCarousel[];
+  upcoming: IDataCarousel[];
+  upcomingDiscount: IDataCarousel[];
+  freeGame: IDataCarousel[];
 
-  slider: IDataSlider[]
-  news: IDataCarousel[]
-  popular: IDataCarousel[]
-  upcoming: IDataCarousel[]
-  upcomingDiscount: IDataCarousel[]
-  freeGame: IDataCarousel[]
-
-  constructor(private service: GamesService) { }
+  constructor(private service: GamesService) {}
 
   ngOnInit(): void {
     // this.games$ = this.service.getGames() // Opção usando observable
 
-    this.service.getSlider().subscribe(slider => {
-      this.slider = slider
+    this.service.getSlider().subscribe((slider) => {
+      this.slider = slider;
     });
 
-    this.service.getGames().subscribe(games => {
-      // News
-      this.news = games.filter(gamesNews => gamesNews.type === 'news')
-      // Most popular
-      this.popular = games.filter(gamesPopular => gamesPopular.type === 'popular')
-      // Upcoming
-      this.upcoming = games.filter(gamesUpcoming => gamesUpcoming.type === 'upcoming' && gamesUpcoming.discount === 0);
-      // Upcoming - Games with discount
-      this.upcomingDiscount = games.filter(gamesDiscount => gamesDiscount.type === 'upcoming' && gamesDiscount.discount > 0);
-      // Free games
-      this.freeGame = games.filter(gamesFree => gamesFree.type === 'free');
-      // this.getDataSlider('news', games, false, false)
-      // this.getDataSlider('popular', games, false, false)
-      // this.getDataSlider('upcoming', games, true, false)
-      // this.getDataSlider('upcomingDiscount', games, false, true)
-      // this.getDataSlider('freeGame', games, false, false)
+    this.service.getGames().subscribe((games) => {
+      // ---- Exemplo de filtro sem o metodo getDataSlider
+      // this.upcomingDiscount = games.filter(
+      //   (gamesDiscount) =>
+      //     gamesDiscount.type === 'upcoming' && gamesDiscount.discount > 0
+      // );
 
+      this.getDataSlider('news', games, false);
+      this.getDataSlider('popular', games, false);
+      this.getDataSlider('upcoming', games, false);
+      this.getDataSlider('upcomingDiscount', games, true);
+      this.getDataSlider('freeGame', games, false);
     });
-
-
   }
 
-  getDataSlider(list, data, equal, more): void {
-    console.log(data.filter(i => i.type === list))
-    this[list] = data.filter(i => i.type === list && (equal && i.discount === 0) && (more && i.discount > 0))
+  getDataSlider(list, data, discount): void {
+    this[list] = data.filter((i) =>
+      i.type === list && discount == false ? i.discount === 0 : i.discount > 0
+    );
   }
 }
