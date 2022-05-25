@@ -1,13 +1,14 @@
 <div class="container">
   <div class="arrow-prev">
     <button (click)="scrollBy(false)">
-      <img src="../../../../assets/icons/ic-arrow-dark.svg" />
+      <!-- <img src="../../../../assets/icons/ic-arrow-dark.svg" /> -->
+      <i class="ic ic-arrow-next icon-arrow"></i>
     </button>
   </div>
 
   <div class="scroll-conatiner" [id]="name + 'container'">
     <div class="scroll-area" *ngFor="let game of dataGame" [id]="game.id">
-      <span class="discount" *ngIf="isLabel">
+      <span class="discount" *ngIf="isDiscount">
         {{ game.discount * 100 }}% OFF
       </span>
       <img src="{{ game.img }}" />
@@ -18,8 +19,11 @@
           <button class="btn-favorite"><i class="ic ic-heart"></i></button>
         </div>
         <div class="flex-scroll-area">
-          <span class="price">${{ game.amount }},00</span>
-          <button class="btn-add">
+          <del *ngIf="isDiscount">${{ game.amount }}</del>
+          <span *ngIf="isDiscount" class="price">${{ game.amount - (game.amount * game.discount) }},00</span>
+          <span *ngIf="!toDisplay" class="price">${{ game.amount }},00</span>
+          <button class="btn-add"
+            *ngIf="!toDisplay">
             <img
               class="icon-cart-add"
               src="../../../../assets/icons/ic-cart-add.svg"
@@ -32,7 +36,8 @@
 
   <div class="arrow-next">
     <button (click)="scrollBy(true)">
-      <img src="../../../../assets/icons/ic-arrow-dark.svg" />
+      <!-- <img src="../../../../assets/icons/ic-arrow-dark.svg" /> -->
+      <i class="ic ic-arrow-next icon-arrow"></i>
     </button>
   </div>
 </div>

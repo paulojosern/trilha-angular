@@ -6,15 +6,13 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SliderComponent } from './slider/slider.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { CarouselDiscountComponent } from './carousel-discount/carousel-discount.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     SliderComponent,
-    CarouselComponent,
-    CarouselDiscountComponent
+    CarouselComponent
   ],
   imports: [
     CommonModule,
@@ -24,8 +22,7 @@ import { CarouselDiscountComponent } from './carousel-discount/carousel-discount
     HeaderComponent,
     FooterComponent,
     SliderComponent,
-    CarouselComponent,
-    CarouselDiscountComponent
+    CarouselComponent
   ]
 })
 export class SharedModule { }
