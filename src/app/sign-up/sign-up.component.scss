@@ -1,3 +1,7 @@
+body html {
+  height: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -9,7 +13,7 @@ button a {
 .first {
   padding-bottom: 2.5%;
   width: 50%;
-
+  height: 100vh;
   background-image: url(../../assets/images/log-img.png),
     url(../../assets/icons/back-login.svg);
 
@@ -32,7 +36,6 @@ button a {
 .par-um {
   color: white;
   font: weight 600px;
-  font-family: "Barrio";
   font-size: 4em;
   font-weight: bold;
 }
@@ -45,16 +48,13 @@ button a {
 
 .par-dois {
   font-weight: lighter;
-
   color: white;
-  font-family: "Barrio";
   font-size: 2em;
   font: weight 200;
 }
 
 .sig {
   color: black;
-  font-family: "Barrio";
   font-size: 2.5em;
   font: weight 300;
 }
@@ -64,7 +64,8 @@ button a {
   color: white;
   /*margin-top: 80%;*/
   text-align: center;
-  padding-top: 54%;
+  padding-top: 45%;
+  position: inherit;
 }
 
 .form input {
@@ -129,7 +130,7 @@ button a {
   padding-bottom: 9%;
   background-color: white;
   width: 50%;
-  height: 100%;
+  height: 100vh;
   display: inline;
   float: right;
 }
