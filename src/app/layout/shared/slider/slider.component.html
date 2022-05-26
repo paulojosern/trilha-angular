@@ -1,15 +1,19 @@
 <div class="container">
   <div class="slider-buttons">
-    <a *ngFor="let item of data" href="#slider-{{ item.id }}"></a>
+    <button
+      *ngFor="let item of data; let i = index"
+      [ngClass]="{'active': selectedIndex === i}"
+      (click)="selectedImage(i)"
+    ></button>
   </div>
   <span class="bestselling">Bestselling</span>
   <div class="scroll-container">
     <div
       class="scroll-area"
-      *ngFor="let item of data"
+      *ngFor="let item of data; let i=index"
       id="slider-{{ item.id }}"
     >
-      <img src="{{ item.img }}">
+      <img src="{{ item.img }}" [ngClass] ="{'item-active': selectedIndex === i}">
       <div class="scroll-area-content">
         <h2>{{ item.title }}</h2>
         <p>{{ item.subtitle }}</p>

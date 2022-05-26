@@ -11,10 +11,17 @@ export class SliderComponent implements OnInit {
 
   @Input() data: IDataSlider[]
 
+  selectedIndex = 0;
+
   constructor() { }
 
   ngOnInit(): void {
     console.log(this.data);
+  }
+
+  // sets index of image on dot/indicator click
+  selectedImage(index: number): void {
+    this.selectedIndex = index;
   }
 
 }
