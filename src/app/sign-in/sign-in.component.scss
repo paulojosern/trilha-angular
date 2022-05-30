@@ -1,0 +1,174 @@
+body html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button a {
+  color: white;
+}
+
+.first {
+  height: 100vh;
+  width: 50%;
+  background: url('../../assets/images/background-login.jpg') rgba(3, 5, 23, 0.85) no-repeat;
+
+  display: inline;
+  float: left;
+}
+
+.logo1 {
+  margin-left: 1em;
+  margin-top: 1em;
+  height: 5%;
+}
+
+.parag {
+  margin-top: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.par-um {
+  color: white;
+  font: weight 600px;
+  font-size: 4em;
+  font-weight: bold;
+}
+.ret {
+  display: inline;
+  float: left;
+  margin-left: 20%;
+  padding-right: 1%;
+}
+
+.par-dois {
+  font-weight: lighter;
+
+  color: white;
+  font-size: 2em;
+  font: weight 200;
+}
+
+.sig {
+  color: black;
+  font-size: 2.5em;
+  font: weight 300;
+}
+
+.footer-log {
+  font-size: 10px;
+  color: white;
+  /*margin-top: 80%;*/
+  text-align: center;
+  padding-top: 43%;
+  padding-bottom: 5%;
+
+  position: inherit;
+}
+
+input#senha {
+  background-image: url(../../assets/icons/senha.svg);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  text-indent: 25px;
+}
+
+input#email {
+  background-image: url(../../assets/icons/email.svg);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  text-indent: 25px;
+}
+
+.form input {
+  color: black;
+  border-radius: 2px;
+  border-style: none;
+  border-color: #eaeaea;
+  background: #eaeaea;
+  width: 75%;
+  height: 3em;
+  padding: 0.6em;
+}
+
+.esq-senha {
+  color: black;
+  font-size: 1em;
+  margin-left: 40%;
+  font-style: bold;
+}
+
+.submit {
+  color: white;
+  background: linear-gradient(#ff5f5f, #f062c0);
+  border-radius: 2px;
+  border-style: none;
+  border-color: #eaeaea;
+  width: 60%;
+  padding: 0.6em;
+  margin-left: 20%;
+  margin-top: 2%;
+}
+
+.cad {
+  color: black;
+  font-size: 1.2em;
+  margin-left: 35%;
+  display: inline;
+  float: left;
+  text-align: center;
+}
+
+.cadcad {
+  color: black;
+  font-size: 0.75em;
+  margin-left: 21%;
+  display: inline;
+  float: left;
+  text-align: center;
+}
+.log {
+  color: black;
+  margin-top: 1em;
+}
+
+.logo2 {
+  margin-left: 35%;
+  margin-top: 20%;
+  margin-bottom: 3%;
+  height: 8%;
+}
+
+.logo3 {
+  margin-left: 30%;
+  margin-top: 20%;
+  height: 5%;
+}
+
+.login {
+  padding-bottom: 15%;
+  background-color: white;
+  width: 50%;
+  height: 100vh;
+  display: inline;
+  float: right;
+}
+
+h3 {
+  margin-left: 20%;
+}
+.form {
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+.tamanho-log {
+  margin-left: 5%;
+}
+
+.sign {
+  color: #35bdac;
+}

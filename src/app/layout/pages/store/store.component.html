@@ -1,1 +1,213 @@
-<p>store works!</p>
+<main class="store">
+  <div class="container">
+    <div class="grid-store">
+      <div class="grid-store-form-menu">
+        <aside>
+          <!-- Form Price -->
+
+          <form action="">
+            <fieldset class="filter-price">
+              <legend class="title-marker">Price</legend>
+              <label>
+                Under $50
+                <input type="checkbox" (change)="onChangePrice(50, $event)" />
+              </label>
+              <label>
+                Under $100
+                <input type="checkbox" (change)="onChangePrice(100, $event)" />
+              </label>
+              <label>
+                Under $150
+                <input type="checkbox" (change)="onChangePrice(150, $event)" />
+              </label>
+              <label>
+                Under $200
+                <input type="checkbox" (change)="onChangePrice(200, $event)" />
+              </label>
+              <label>
+                Free
+                <input type="checkbox" />
+              </label>
+              <label>
+                Discounted
+                <input type="checkbox" />
+              </label>
+            </fieldset>
+          </form>
+
+          <hr />
+          <!-- Form Sort By -->
+          <form action="">
+            <fieldset class="filter-sort-by">
+              <legend class="title-marker">Sort by</legend>
+              <div>
+                <input
+                  type="radio"
+                  id="test1"
+                  name="radio-group"
+                  (change)="onSortBy(false)"
+                />
+                <label for="test1">High to Low</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="test2"
+                  name="radio-group"
+                  (change)="onSortBy(true)"
+                />
+                <label for="test2">Low to High</label>
+              </div>
+            </fieldset>
+          </form>
+
+          <hr />
+          <!-- Form System -->
+          <form action="">
+            <fieldset class="filter-system">
+              <legend class="title-marker">System</legend>
+              <label>
+                Windows
+                <input
+                  type="checkbox"
+                  (change)="onChangeSystem('windows', $event)"
+                />
+              </label>
+              <label>
+                Linux
+                <input
+                  type="checkbox"
+                  (change)="onChangeSystem('Linux', $event)"
+                />
+              </label>
+              <label>
+                Mac
+                <input
+                  type="checkbox"
+                  (change)="onChangeSystem('mac', $event)"
+                />
+              </label>
+            </fieldset>
+          </form>
+
+          <hr />
+          <!-- Form Genre -->
+          <form action="">
+            <fieldset class="Genre">
+              <legend class="title-marker">Genre</legend>
+              <label>
+                Action
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('Action', $event)"
+                />
+              </label>
+              <label>
+                Adventure
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('Adventure', $event)"
+                />
+              </label>
+              <label>
+                FPS
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('FPS', $event)"
+                />
+              </label>
+              <label>
+                MMORPG
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('MMORPG', $event)"
+                />
+              </label>
+              <label>
+                RPG
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('RPG', $event)"
+                />
+              </label>
+              <label>
+                Indie
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('Indie', $event)"
+                />
+              </label>
+              <label>
+                Shooters
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('Shooters', $event)"
+                />
+              </label>
+              <label>
+                Simulation
+                <input
+                  type="checkbox"
+                  (change)="onChangeGenre('simulation', $event)"
+                />
+              </label>
+            </fieldset>
+          </form>
+        </aside>
+      </div>
+
+      <div class="grid-store-search-bar">
+        <section class="search-bar">
+          <input
+            class="search-bar-input"
+            type="text"
+            name=""
+            id=""
+            placeholder="Search for"
+            (input)="onSearch($event)"
+          />
+          <i class="ic ic-search-bar"></i>
+        </section>
+      </div>
+
+      <div class="grid-store-card-games">
+        <section class="container-cards" *ngIf="games; else pesquisaInvalida">
+          <div class="card-game" *ngFor="let game of games">
+            <figure>
+              <img src="{{ game.img }}" alt="" />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-content-left">
+                <h3>{{ game.title }}</h3>
+                <p>{{ game.author }}</p>
+              </div>
+
+              <div class="card-content-right">
+                <i class="ic ic-heart"></i>
+                <div class="card-buttons">
+                  <div class="game-price">
+                    <p>${{ game.amount }},00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <ng-template #pesquisaInvalida>
+          <div class="pesquisaInvalida">
+            <img src="../../../../assets/images/404.png" alt="" />
+            <h3>Não existem jogos para a pesuisa: {{ pesquisa }}</h3>
+          </div>
+        </ng-template>
+      </div>
+
+      <div class="grid-store-empty-space-1"></div>
+
+      <div class="grid-store-show-more">
+        <h3>Show More</h3>
+        <img src="../../../../assets/icons/ic-arrow-down-pink.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</main>

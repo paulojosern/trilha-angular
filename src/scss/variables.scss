@@ -5,8 +5,14 @@ $color-orange: #f56161;
 $color-white: #fafafa;
 $color-background: #16193a;
 $color-gray: #b5b5b5;
+$color-gray-card: #bbbbbb;
+$color-gray-input: #2e2f42;
 $color-green-main: #3cd3c1;
 $color-green-dark: #35bdac;
 // linear-gradient
-$color-gradient-pink: linear-gradient(178.59deg, #FF5F5F -14.51%, #F062C0 102.86%, #F23131 102.86%);
-
+$color-gradient-pink: linear-gradient(
+  178.59deg,
+  #ff5f5f -14.51%,
+  #f062c0 102.86%,
+  #f23131 102.86%
+);

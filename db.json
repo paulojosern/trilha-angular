@@ -2,24 +2,333 @@
   "games": [
     {
       "id": 1,
-      "name": "Red Dead Redemption",
-      "author": "Rock",
-      "amount": 215.5,
-      "img": "/img/01"
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 35.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "news",
+      "system": "windows",
+      "genre": "fps"
     },
     {
       "id": 2,
-      "title": "Borderlands",
-      "author": "Gyba",
-      "amount": 315.5,
-      "img": "/img/02"
+      "title": "Project Winter",
+      "author": "Rockstar Games",
+      "amount": 15.0,
+      "discount": 0,
+      "img": " assets/images/banner-games/banner-project-winter.png",
+      "type": "news",
+      "system": "windows",
+      "genre": "adventure"
     },
     {
       "id": 3,
-      "title": "Zero",
-      "author": "Abc",
-      "amount": 485.2,
-      "img": "/img/03"
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 75.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "news",
+      "system": "windows",
+      "genre": "adventure"
+    },
+    {
+      "id": 4,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "news",
+      "system": "windows",
+      "genre": "rpg"
+    },
+    {
+      "id": 5,
+      "title": "Project Winter",
+      "author": "Rockstar Games",
+      "amount": 215.0,
+      "discount": 0,
+      "img": " assets/images/banner-games/banner-project-winter.png",
+      "type": "news",
+      "system": "windows",
+      "genre": "indie"
+    },
+    {
+      "id": 6,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 85.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "news",
+      "system": "windows",
+      "genre": "rpg"
+    },
+    {
+      "id": 7,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
+    },
+    {
+      "id": 8,
+      "title": "Red Dead Redemption ",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
+    },
+    {
+      "id": 9,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
+    },
+    {
+      "id": 10,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
+    },
+    {
+      "id": 11,
+      "title": "Resident Evil 3",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-resident-evil.png",
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
+    },
+    {
+      "id": 12,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "popular",
+      "system": "Linux",
+      "genre": "action"
+    },
+    {
+      "id": 13,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "shooters"
+    },
+    {
+      "id": 14,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "shooters"
+    },
+    {
+      "id": 15,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "shooters"
+    },
+    {
+      "id": 16,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "simulation"
+    },
+    {
+      "id": 17,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "simulation"
+    },
+    {
+      "id": 18,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 215.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "simulation"
+    },
+    {
+      "id": 19,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "simulation"
+    },
+    {
+      "id": 20,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "adventure"
+    },
+    {
+      "id": 21,
+      "title": "Resident Evil 3",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-resident-evil.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "mmorpg"
+    },
+    {
+      "id": 22,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "mmorpg"
+    },
+    {
+      "id": 23,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "mmorpg"
+    },
+    {
+      "id": 24,
+      "title": "Resident Evil 3",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0.2,
+      "img": "assets/images/banner-games/banner-resident-evil.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "mmorpg"
+    },
+    {
+      "id": 25,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 235.0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "free",
+      "system": "windows",
+      "genre": "indie"
+    },
+    {
+      "id": 26,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "free",
+      "system": "windows",
+      "genre": "indie"
+    },
+    {
+      "id": 27,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "free",
+      "system": "windows",
+      "genre": "fps"
+    },
+    {
+      "id": 28,
+      "title": "Population Zero",
+      "author": "Rockstar Games",
+      "amount": 0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-population-zero.png",
+      "type": "upcoming",
+      "system": "mac",
+      "genre": "fps"
+    },
+    {
+      "id": 29,
+      "title": "Red Dead Redemption",
+      "author": "Rockstar Games",
+      "amount": 0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-red-dead.png",
+      "type": "free",
+      "system": "windows",
+      "genre": "indie"
+    },
+    {
+      "id": 30,
+      "title": "Borderlands 3",
+      "author": "Other Ocean",
+      "amount": 0,
+      "discount": 0,
+      "img": "assets/images/banner-games/banner-borderlands.png",
+      "type": "free",
+      "system": "windows",
+      "genre": "rpg"
     }
   ],
   "slider": [
@@ -28,24 +337,28 @@
       "img": "./",
       "link": "/link",
       "title": "Pateta Death",
-      "subtitle": "Disney the new season",
-      "type": "news"
+      "subtitle": "Disney the new season"
     },
     {
       "id": 2,
       "img": "/src/assets/images/banner-home.png",
       "link": "/link",
       "title": "Defy Death",
-      "subtitle": "Play the new season",
-      "type": "popular"
+      "subtitle": "Play the new season"
     },
     {
       "id": 3,
       "img": "./",
       "link": "/link",
       "title": "Defy banana",
-      "subtitle": "Banna the new season",
-      "type": "popular"
+      "subtitle": "Banna the new season"
+    },
+    {
+      "id": 4,
+      "img": "./",
+      "link": "/link",
+      "title": "Defy banana",
+      "subtitle": "Banna the new season"
     }
   ]
 }

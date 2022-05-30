@@ -1,11 +1,13 @@
-<!-- <p>home !</p>
+<p>home !</p>
 <ul>
   <li *ngFor="let item of games">{{ item.title }}</li>
 </ul>
 <hr />
 <ul>
-  <li *ngFor="let item of games$ | async">{{ item.title }}</li>
-</ul> -->
+  <li *ngFor="let item of games$ | async">
+    <img src="{{ item.img }}" alt="" />
+  </li>
+</ul>
 
 <main>
   <section>
