@@ -20,7 +20,7 @@
   display: flex;
   gap: 1rem;
 
-  button {
+  a {
     width: 1em;
     height: 1em;
     display: inline-block;
@@ -30,12 +30,6 @@
     color: #000;
     border-radius: 50%;
   }
-
-  button:hover {
-    background-color: $color-pink;
-  }
-
-
 }
 
 .scroll-container,

@@ -1,10 +1,6 @@
 <div class="container">
   <div class="slider-buttons">
-    <button
-      *ngFor="let item of data; let i = index"
-      [ngClass]="{'active': selectedIndex === i}"
-      (click)="selectedImage(i)"
-    ></button>
+    <a *ngFor="let item of data" href="#slider-{{ item.id }}"></a>
   </div>
   <span class="bestselling">Bestselling</span>
   <div class="scroll-container">
