@@ -1,120 +1,65 @@
 @import "../../../../styles.scss";
 
-// classes globais
-.h1-layout {
-  color: $color-white;
-  margin-left: 15px;
-}
-
-.h1-layout::before {
-  @extend %detail-before-green;
-}
-
-// detalhe background
 .background {
+  width: 100%;
+  height: 50.8rem;
   background: #F2F2F2;
+  position: absolute;
+  z-index: -1;
+  top: 50rem;
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 90%);
-  position: absolute;
-  height: 550px;
-  width: 100%;
-  top: 485px;
-  z-index: 0;
 }
 
-// intro
-.flex-content {
-  display: flex;
-  place-content: center;
-}
+.h1-layout {
+  width: 1042px;
+  margin: 70px auto 30px auto;
 
-.bestselling {
-  background-color: #3CD3C1;
-  color: #FAFAFA;
-  font-size: 14px;
-  margin: 50px 0px 0px 960px;
-  padding: 5px 10px;
-  position: absolute;
-  z-index: 1;
-}
-
-.bestselling::after{
-  border-top: 10px solid #3CD3C1;
-  border-right: 12px solid transparent;
-  content: '';
-  opacity: 0.5;
-  position: absolute;
-  top: 100%;
-  left: 87%;
-  width: 0;
-  height: 0;
-  z-index: 1;
-}
-
-.radio-carrosel-intro {
-  padding: 250px 1px 250px 1px;
-  display: grid;
-
-  input {
-    appearance: none;
-    background-color: #D3D3D3;
-    border: none;
-    border-radius: 50%;
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 11px;
-    width: 11px;
+  h1 {
+    font-size: 2.8rem;
+    margin-left: 15px;
   }
 
-  input:checked {
-    background-color: #F231A5;
-    border: none;
+  h1:before {
+    @extend %detail-before-green;
+  }
+
+  .news {
+    color: #030517;
+  }
+
+  .most-popular {
+    color: $color-white;
   }
 }
 
-.intro {
-  margin: auto 100px;
-  max-width: 1043px;
-  height: 585px;
+.banner {
+  @extend %banner;
 }
 
-.intro-content {
-  display: grid;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  bottom: 0px;
-  color: $color-white;
-  gap: 5px;
-  justify-content: start;
-  padding: 0px 50px;
-  position: absolute;
-  height: 220px;
-  width: 100%;
-
-  h2 {
-    align-self: end;
-    font-weight: 600;
-  }
-
-  p, span {
-    font-size: 20px;
-  }
-
-  span {
-    color: #F231A5;
-    font-weight: bold;
-  }
+.banner-popular {
+  background: $color-gradient-banner, url('../../../../assets/images/big-banner-games/banner-red-dead.png') no-repeat;
 }
 
-.button-buy {
-  background: $color-gradient-pink;
-  border: none;
-  border-radius: 4px;
-  color: $color-white;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-  padding: 20px 60px;
+.banner-upcoming {
+  background: $color-gradient-banner, url('../../../../assets/images/big-banner-games/banner-borderlands.png') no-repeat;
+  margin: 60px auto 30px auto;
+}
+
+.banner-free-games {
+  background: $color-gradient-banner, url('../../../../assets/images/big-banner-games/banner-cs-go.png') no-repeat;
+}
+
+.banner-content-left {
+  @extend %banner-content;
+  justify-items: start
+}
+
+.banner-content-right {
+  @extend %banner-content;
+}
+
+.section-free-games {
+  margin-bottom: 100px;
 }
 
 // Carousel games
