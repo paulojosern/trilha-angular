@@ -18,4 +18,8 @@ export class GamesService {
     return this.httpClient.get(this.url + 'games').pipe(tap(console.log))
   }
 
+  public getSlider(): Observable<any> {
+    return this.httpClient.get(this.url + 'slider').pipe(tap(console.log))
+  }
+
 }

@@ -1,0 +1,82 @@
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -50px;
+  width: auto;
+  height: auto;
+  font-size: 1rem;
+  text-align: right;
+  z-index: 2;
+  flex-direction: column;
+  display: flex;
+  gap: 1rem;
+
+  a {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background: white;
+    text-align: center;
+    padding: 0.5em 0;
+    color: #000;
+    border-radius: 50%;
+  }
+}
+
+.scroll-container,
+.scroll-area {
+  width: 100%;
+  height: 400px;
+  font-size: 60px;
+}
+
+.scroll-container {
+  position: relative;
+  overflow: hidden;
+  scroll-snap-type: y mandatory;
+  // efeito de rolagem suave
+  scroll-behavior: smooth;
+  // garantindo que funcione em outros navegadores
+  -webkit-scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+}
+
+.scroll-area {
+  scroll-snap-align: start;
+}
+
+.scroll-container,
+.scroll-area {
+  margin: 0 auto;
+}
+
+.scroll-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.scroll-area:nth-of-type(1) {
+  background: #49b293;
+}
+
+.scroll-area:nth-of-type(2) {
+  background: #c94e4b;
+}
+
+.scroll-area:nth-of-type(3) {
+  background: #4cc1be;
+}
+
+.scroll-area:nth-of-type(4) {
+  background: #8360a6;
+}

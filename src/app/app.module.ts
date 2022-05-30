@@ -1,32 +1,35 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-
-import { AppComponent } from './app.component';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { DefaultModule } from './layout/default/default.module'
+import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DefaultModule } from './layout/default/default.module';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { SliderComponent } from './shared/slider/slider.component';
+import { SignUpComponent } from './sign-up/sign-up.component'
+import { JwtInterceptor } from 'src/app/helpers/jwt.interceptor'
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
-    SliderComponent,
+    SignUpComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    CommonModule,
     BrowserAnimationsModule,
+    BrowserModule,
+    CommonModule,
+    DefaultModule,
     FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     DefaultModule
+
   ],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

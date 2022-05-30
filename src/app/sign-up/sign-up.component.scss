@@ -11,9 +11,11 @@ button a {
 }
 
 .first {
-  height: 100vh;
+  padding-bottom: 2.5%;
   width: 50%;
-  background: url('../../assets/images/background-login.jpg') rgba(3, 5, 23, 0.85) no-repeat;
+  height: 100vh;
+  background-image: url(../../assets/images/log-img.png),
+    url(../../assets/icons/back-login.svg);
 
   display: inline;
   float: left;
@@ -46,7 +48,6 @@ button a {
 
 .par-dois {
   font-weight: lighter;
-
   color: white;
   font-size: 2em;
   font: weight 200;
@@ -63,42 +64,19 @@ button a {
   color: white;
   /*margin-top: 80%;*/
   text-align: center;
-  padding-top: 43%;
-  padding-bottom: 5%;
-
+  padding-top: 45%;
   position: inherit;
 }
 
-input#senha {
-  background-image: url(../../assets/icons/senha.svg);
-  background-repeat: no-repeat;
-  background-position: 5px;
-  text-indent: 25px;
-}
-
-input#email {
-  background-image: url(../../assets/icons/email.svg);
-  background-repeat: no-repeat;
-  background-position: 5px;
-  text-indent: 25px;
-}
-
 .form input {
+  height: 3em;
   color: black;
   border-radius: 2px;
   border-style: none;
   border-color: #eaeaea;
   background: #eaeaea;
   width: 75%;
-  height: 3em;
   padding: 0.6em;
-}
-
-.esq-senha {
-  color: black;
-  font-size: 1em;
-  margin-left: 40%;
-  font-style: bold;
 }
 
 .submit {
@@ -149,7 +127,7 @@ input#email {
 }
 
 .login {
-  padding-bottom: 15%;
+  padding-bottom: 9%;
   background-color: white;
   width: 50%;
   height: 100vh;
@@ -167,6 +145,27 @@ h3 {
 
 .tamanho-log {
   margin-left: 5%;
+}
+
+input#name {
+  background-image: url(../../assets/icons/user-black.svg);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  text-indent: 25px;
+}
+
+input#senha {
+  background-image: url(../../assets/icons/senha.svg);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  text-indent: 25px;
+}
+
+input#email {
+  background-image: url(../../assets/icons/email.svg);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  text-indent: 25px;
 }
 
 .sign {

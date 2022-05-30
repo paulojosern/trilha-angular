@@ -1,1 +1,16 @@
-<p>slider works!</p>
+<div class="container">
+  <div class="slider-buttons">
+    <a *ngFor="let item of data" href="#slider-{{ item.id }}"></a>
+  </div>
+  <div class="scroll-container">
+    <div
+      class="scroll-area"
+      *ngFor="let item of data"
+      id="slider-{{ item.id }}"
+    >
+      <img src="{{ item.img }}">
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.subtitle }}</p>
+    </div>
+  </div>
+</div>
