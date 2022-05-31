@@ -27,13 +27,14 @@
         {{ message }}
       </div>
 
-      <form class="form" [formGroup]="formLogin">
+      <form class="form" [formGroup]="formLogin" #form="ngForm">
         <input
           type="email"
           id="email"
           name="email"
           placeholder=" Email"
           formControlName="email"
+          email
         />
         <br />
         <br />
