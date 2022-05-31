@@ -3,14 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
-// model
-export class User {
-  id: number;
-  email: string;
-  password: string;
-  name: string;
-  access_token: string;
-}
+import { User } from '../../modules/iuser';
 
 @Injectable({
   providedIn: 'root'
