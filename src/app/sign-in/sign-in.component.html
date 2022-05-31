@@ -5,7 +5,7 @@
       <h1 class="par-um">All your favorite games in one place</h1>
       <br />
       <h6 class="par-dois">
-        <span style="color: #f231a5">HON</span>
+        <span style="color: #f231a5;">HON</span>
         is the best and most complete gaming plataform
       </h6>
 
@@ -22,6 +22,9 @@
       <div class="log">
         <img class="ret" src="../../assets/images/ret.png" />
         <h3 class="sig">Sign in</h3>
+      </div>
+      <div class="message" *ngIf="message">
+        {{ message }}
       </div>
 
       <form class="form" [formGroup]="formLogin">
@@ -54,7 +57,7 @@
         type="submit"
         class="submit"
         form="form"
-        style="color: black"
+        style="color: black;"
       >
         <a>Sign in now</a>
       </button>

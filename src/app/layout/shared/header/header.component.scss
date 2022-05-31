@@ -1,4 +1,4 @@
-@import "../../../../styles.scss";
+@import '../../../../styles.scss';
 
 header {
   margin: 50px 100px;
@@ -51,7 +51,7 @@ header {
 }
 
 .header-icons div:nth-child(2)::after {
-  content: "12";
+  content: '12';
   padding: 0.2rem 0.7rem;
   border-radius: 90%;
   background-color: $color-green-dark;
@@ -71,4 +71,14 @@ header {
   border-radius: 4px;
   padding: 10px 25px;
   font-size: 1.4rem;
+  cursor: pointer;
+  &.logout {
+    margin-left: 2rem;
+  }
+}
+
+.profile {
+  font-size: 1.8rem;
+  padding: 10px 15px;
+  cursor: pointer;
 }

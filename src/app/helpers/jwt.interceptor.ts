@@ -31,11 +31,11 @@ export class JwtInterceptor implements HttpInterceptor {
       if (err.status === 401) {
 
         this.serviceLogin.logout();
-        location.reload();
+        // location.reload();
       }
 
-      const error = err.error.message || err.statusText;
-      return throwError(error);
+      // const error = err.error.message || err.statusText;
+      return throwError(err);
     }))
 
 

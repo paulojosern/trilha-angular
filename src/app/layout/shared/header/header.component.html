@@ -27,11 +27,16 @@
 
       <img src="../../../../assets/icons/ic-user.svg" alt="" />
 
-      <!-- <p>Jhon</p>
+      <ng-container *ngIf="currentUser; else templateName">
+        <a class="profile">Jhon</a>
 
-      <img src="../../../../assets/icons/ic-arrow-donw.svg" alt="" /> -->
+        <img src="../../../../assets/icons/ic-arrow-donw.svg" alt="" />
+        <a class="button-signIn logout" (click)="logout()">LogOut</a>
+      </ng-container>
 
-      <a class="button-signIn" routerLink="/signin">Sign in</a>
+      <ng-template #templateName>
+        <a class="button-signIn" routerLink="/signin">Sign in</a>
+      </ng-template>
     </section>
   </nav>
 </header>
