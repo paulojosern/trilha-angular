@@ -2,6 +2,7 @@
   "games": [
     {
       "id": 1,
+      "image": "assets/images/banner-games/banner-population-zero.png",
       "title": "Population Zero",
       "author": "Rockstar Games",
       "amount": 35.0,
@@ -13,6 +14,7 @@
     },
     {
       "id": 2,
+      "image": "assets/images/banner-games/banner-project-winter.png",
       "title": "Project Winter",
       "author": "Rockstar Games",
       "amount": 15.0,
@@ -24,6 +26,7 @@
     },
     {
       "id": 3,
+      "image": "assets/images/banner-games/banner-borderlands.png",
       "title": "Borderlands 3",
       "author": "Other Ocean",
       "amount": 75.0,
@@ -203,9 +206,9 @@
       "title": "Red Dead Redemption",
       "author": "Rockstar Games",
       "amount": 235.0,
-      "discount": 0.2,
+      "discount": 0.4,
       "img": "assets/images/banner-games/banner-red-dead.png",
-      "type": "upcoming",
+      "type": "upcomingDiscount",
       "system": "mac",
       "genre": "simulation"
     },
@@ -213,10 +216,10 @@
       "id": 20,
       "title": "Population Zero",
       "author": "Rockstar Games",
-      "amount": 235.0,
-      "discount": 0.2,
+      "amount": 150.0,
+      "discount": 0.1,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "upcoming",
+      "type": "upcomingDiscount",
       "system": "mac",
       "genre": "adventure"
     },
@@ -224,10 +227,10 @@
       "id": 21,
       "title": "Resident Evil 3",
       "author": "Rockstar Games",
-      "amount": 235.0,
-      "discount": 0.2,
+      "amount": 350.0,
+      "discount": 0.5,
       "img": "assets/images/banner-games/banner-resident-evil.png",
-      "type": "upcoming",
+      "type": "upcomingDiscount",
       "system": "mac",
       "genre": "mmorpg"
     },
@@ -235,10 +238,10 @@
       "id": 22,
       "title": "Red Dead Redemption",
       "author": "Rockstar Games",
-      "amount": 235.0,
+      "amount": 120.0,
       "discount": 0.2,
       "img": "assets/images/banner-games/banner-red-dead.png",
-      "type": "upcoming",
+      "type": "upcomingDiscount",
       "system": "mac",
       "genre": "mmorpg"
     },
@@ -246,10 +249,10 @@
       "id": 23,
       "title": "Population Zero",
       "author": "Rockstar Games",
-      "amount": 235.0,
-      "discount": 0.2,
+      "amount": 170.0,
+      "discount": 0.3,
       "img": "assets/images/banner-games/banner-population-zero.png",
-      "type": "upcoming",
+      "type": "upcomingDiscount",
       "system": "mac",
       "genre": "mmorpg"
     },
@@ -257,10 +260,10 @@
       "id": 24,
       "title": "Resident Evil 3",
       "author": "Rockstar Games",
-      "amount": 235.0,
-      "discount": 0.2,
+      "amount": 125.0,
+      "discount": 0.4,
       "img": "assets/images/banner-games/banner-resident-evil.png",
-      "type": "upcoming",
+      "type": "upcomingDiscount",
       "system": "mac",
       "genre": "mmorpg"
     },
@@ -334,31 +337,31 @@
   "slider": [
     {
       "id": 1,
-      "img": "./",
+      "img": "assets/images/banner-home.png",
       "link": "/link",
-      "title": "Pateta Death",
-      "subtitle": "Disney the new season"
+      "title": "Crashlands",
+      "subtitle": "Play the new CrashLands season"
     },
     {
       "id": 2,
-      "img": "./",
+      "img": "assets/images/slider-borderlands.jpeg",
       "link": "/link",
-      "title": "Defy Death",
-      "subtitle": "Play the new season"
+      "title": "Borderlands 3",
+      "subtitle": "Play the new Borderlands"
     },
     {
       "id": 3,
-      "img": "./",
+      "img": "assets/images/slider-valorant.jpg",
       "link": "/link",
-      "title": "Defy banana",
-      "subtitle": "Banna the new season"
+      "title": "Valorant",
+      "subtitle": "Play the new season"
     },
     {
       "id": 4,
-      "img": "./",
+      "img": "assets/images/slider-god-of-war.jpg",
       "link": "/link",
-      "title": "Defy banana",
-      "subtitle": "Banna the new season"
+      "title": "God of War",
+      "subtitle": "Play the new God of War"
     }
   ]
 }

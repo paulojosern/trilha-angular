@@ -1,95 +1,98 @@
-<p>home !</p>
-<ul>
-  <li *ngFor="let item of games">{{ item.title }}</li>
-</ul>
-<hr />
-<ul>
-  <li *ngFor="let item of games$ | async">
-    <img src="{{ item.img }}" alt="" />
-  </li>
-</ul>
-
 <main>
+  <span class="background"></span>
   <section>
     <app-slider *ngIf="slider" [data]="slider"></app-slider>
-
-    <!-- <div class="flex-content">
-      <div class="intro">
-        <span class="bestselling">Bestselling</span>
-        <img src="../../../../assets/images/banner-home.png" alt="" />
-        <div class="intro-content">
-          <h2>Defy death</h2>
-          <p>
-            Play the new
-            <span>CrashLands</span>
-            season
-          </p>
-          <div>
-            <button type="button" class="button-buy" name="buy">Buy now</button>
-          </div>
-        </div>
-      </div>
-      <div class="radio-carrosel-intro">
-        <input
-          class="radio"
-          type="radio"
-          name="carrosel-intro"
-          id="carrosel-intro"
-        />
-        <input
-          class="radio"
-          type="radio"
-          name="carrosel-intro"
-          id="carrosel-intro"
-        />
-        <input
-          class="radio"
-          type="radio"
-          name="carrosel-intro"
-          id="carrosel-intro"
-        />
-        <input
-          class="radio"
-          type="radio"
-          name="carrosel-intro"
-          id="carrosel-intro"
-        />
-      </div>
-    </div> -->
   </section>
 
   <section>
-    <div class="section-news">
-      <div class="games-carousel">
-        <h1 class="layout-title">News</h1>
-        <ul class="games-carousel-ul">
-          <li class="games-carousel-list" *ngFor="let item of games">
-            <img
-              class="games-carousel-list-image"
-              src="assets/images/game-populationzero.png"
-              alt=""
-            />
-            <div class="grid-content-list">
-              <span class="game-name">{{ item.title }}</span>
-              <div class="grid-content-info">
-                <img
-                  class="favorite"
-                  src="assets/icons/home/favorite_border.svg"
-                  alt=""
-                />
-              </div>
-              <span class="game-producer">{{ item.author }}</span>
-              <div class="flex-price">
-                <span class="price">${{ item.price }},00</span>
-                <!-- <span><button class="section-button-add"><img class="image-button-add" src="assets/icons/home/add_shopping_cart.svg" alt=""></button></span> -->
-              </div>
-            </div>
-          </li>
-        </ul>
+    <div class="h1-layout">
+      <h1 class="news">News</h1>
+    </div>
+    <app-carousel
+      *ngIf="news"
+      [dataGame]="news"
+      name="news"
+    ></app-carousel>
+  </section>
+
+  <section>
+    <div class="h1-layout">
+      <h1 class="most-popular">Most Popular</h1>
+    </div>
+    <div class="banner banner-popular">
+      <img
+        src="../../../../assets/images/big-banner-games/banner-red-dead-woman.png"
+        alt=""
+      />
+      <div class="banner-content-right">
+        <h2>Read Dead it’s back</h2>
+        <p>Come see John’s new adventures</p>
+        <a href="#">Buy now</a>
       </div>
-      <!-- <div class="section-arrow-next">
-        <span><img src="assets/icons/home/arrow-next.svg" alt=""></span>
-      </div> -->
+    </div>
+    <app-carousel
+      *ngIf="popular"
+      [dataGame]="popular"
+      name="popular"
+      arrowLight="true"
+    ></app-carousel>
+  </section>
+
+  <section>
+    <div class="h1-layout">
+      <h1 class="upcoming">Upcoming</h1>
+    </div>
+
+    <app-carousel
+      *ngIf="upcoming"
+      [dataGame]="upcoming"
+      name="upcoming"
+      arrowLight="true"
+    ></app-carousel>
+
+    <div class="banner banner-upcoming">
+      <div class="banner-content-left">
+        <h2>Borderlands 3</h2>
+        <p>Borderlands it’s back.</p>
+        <a href="#">Buy now</a>
+      </div>
+      <img
+        src="../../../../assets/images/big-banner-games/banner-borderlands-robot.png"
+        alt=""
+      />
+    </div>
+
+    <app-carousel
+      *ngIf="upcomingDiscount"
+      [dataGame]="upcomingDiscount"
+      isDiscount="true"
+      toDisplay ="false"
+      arrowLight="true"
+    ></app-carousel>
+  </section>
+
+  <section>
+    <div class="section-free-games">
+      <div class="h1-layout">
+        <h1 class="free-games">Free games</h1>
+      </div>
+      <div class="banner banner-free-games">
+        <img
+          src="../../../../assets/images/big-banner-games/banner-cs-go-man.png"
+          alt=""
+        />
+        <div class="banner-content-right">
+          <h2>CS:GO, the most classic game</h2>
+          <a href="#">Download now</a>
+        </div>
+      </div>
+      <app-carousel
+        *ngIf="free"
+        [dataGame]="free"
+        name="free"
+        toDisplay="false"
+        arrowLight="true"
+      ></app-carousel>
     </div>
   </section>
 </main>

@@ -28,7 +28,7 @@
       <img src="../../../../assets/icons/ic-user.svg" alt="" />
 
       <ng-container *ngIf="currentUser; else templateName">
-        <a class="profile">Jhon</a>
+        <a class="profile" routerLink="/profile">{{ currentUser.name }}</a>
 
         <img src="../../../../assets/icons/ic-arrow-donw.svg" alt="" />
         <a class="button-signIn logout" (click)="logout()">LogOut</a>

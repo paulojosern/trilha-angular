@@ -10,9 +10,49 @@ $color-gray-input: #2e2f42;
 $color-green-main: #3cd3c1;
 $color-green-dark: #35bdac;
 // linear-gradient
-$color-gradient-pink: linear-gradient(
-  178.59deg,
-  #ff5f5f -14.51%,
-  #f062c0 102.86%,
-  #f23131 102.86%
-);
+$color-gradient-pink: linear-gradient(178.59deg, #FF5F5F -14.51%, #F062C0 102.86%, #F23131 102.86%);
+$color-gradient-banner: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+
+// detail-before
+%detail-before-green {
+  background: #3CD3C1;
+  margin-left: -15px;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 7px;
+  top: 15%;
+  position: absolute;
+}
+
+%banner {
+  width: 1043px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+%banner-content {
+  color: #FFFFFF;
+  display: grid;
+  align-content: end;
+  justify-items: end;
+  gap: 5px;
+  padding: 50px;
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    background: $color-gradient-pink;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    padding: 10px 50px;
+    text-align: center;
+  }
+}

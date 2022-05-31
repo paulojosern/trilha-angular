@@ -5,7 +5,8 @@ import { StoreComponent } from './layout/pages/store/store.component';
 import { DefaultComponent } from './layout/default/default.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-
+import { ProfileComponent } from './layout/pages/profile/profile.component';
+import { AuthGuard } from 'src/app/guards/auth.guard'
 const routes: Routes = [
   {
     path: '',
@@ -28,6 +29,11 @@ const routes: Routes = [
   {
     path: 'signup',
     component: SignUpComponent,
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent,
+    canActivate: [AuthGuard]
   },
 ];
 

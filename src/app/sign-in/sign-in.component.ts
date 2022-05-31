@@ -11,7 +11,7 @@ export class SignInComponent implements OnInit {
   formLogin: FormGroup;
   message: string
   returnUrl: string;
-
+  errorMsg: any;
   constructor(
     private formBuilder: FormBuilder,
     private serviceLogin: LoginService,
@@ -34,11 +34,16 @@ export class SignInComponent implements OnInit {
   onSubmit() {
     const { email, password } = this.formLogin.value;
     this.serviceLogin.login(email, password).subscribe(
-      (result) => {
-        this.message = ''
+      result => {
         this.router.navigate([this.returnUrl]);
       },
-      (err) => this.message = err.error.message
-    );
+      err => {
+        // console.log(err);
+        this.message = err.error.message;
+        this.errorMsg = Object.assign([], err);
+        // alert(this.errorMsg.error.message);
+        this.formLogin.controls.password.reset();
+      }
+    )
   }
 }

@@ -1,0 +1,150 @@
+@import '../../../../styles.scss';
+
+h3 {
+  color: #030517;
+  font-size: 16px;
+}
+
+p {
+  color: #bbbbbb;
+  font-size: 12px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: auto;
+  width: 1042px;
+  display: grid;
+  align-items: center;
+  // grid-template-columns: 50px 1fr 50px;
+}
+
+.scroll-conatiner {
+  display: flex;
+  gap: 75px;
+  justify-content: space-between;
+  // escondendo a barra de rolagem
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  // efeito de rolagem suave
+  scroll-behavior: smooth;
+  // garantindo que funcione em outros navegadores
+  -webkit-scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
+}
+
+.scroll-area img {
+  border-radius: 4px 4px 0px 0px;
+  display: block;
+}
+
+.grid-scroll-area {
+  background-color: $color-white;
+  border-radius: 0px 0px 4px 4px;
+  display: grid;
+  grid-template-columns: 190px 70px;
+  grid-template-rows: repeat(2, auto);
+  padding: 15px;
+}
+
+.btn-favorite {
+  display: grid;
+  justify-content: end;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.flex-scroll-area {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 3px;
+  justify-content: end;
+
+  del {
+    color: #C7C7C7;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+  }
+
+  .price {
+    align-self: center;
+    background-color: $color-green-main;
+    border-radius: 2px;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0px 10px;
+  }
+
+  .btn-add {
+    display: block;
+    align-self: center;
+    background: $color-gradient-pink;
+    border-radius: 2px;
+
+    .icon-cart-add {
+      height: 20.5px;
+      width: 30px;
+      padding: 3px;
+    }
+  }
+}
+
+.discount {
+  background-color: #FF5F5F;
+  color: #FAFAFA;
+  font-size: 10px;
+  margin: 15px 0px 0px 235px;
+  text-align: center;
+  width: 70px;
+  height: 25px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.discount::after{
+  border-top: 6px solid #FF5F5F;
+  border-right: 12px solid transparent;
+  content: '';
+  margin-left: 2.5px;
+  opacity: 0.5;
+  position: absolute;
+  top: 25px;
+  width: 0;
+  height: 0;
+  z-index: 1;
+}
+
+.icon-arrow {
+  width: 4rem;
+  height: 4rem;
+}
+
+.arrow-next {
+  position: absolute;
+  top: 30%;
+  right: -65px;
+  font-size: 1rem;
+  text-align: right;
+  z-index: 2;
+  flex-direction: column;
+}
+
+.arrow-prev {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 31%;
+  left: -65px;
+  font-size: 1rem;
+  text-align: right;
+  z-index: 2;
+  flex-direction: column;
+}

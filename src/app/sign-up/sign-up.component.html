@@ -23,29 +23,41 @@
         <img class="ret" src="../../assets/images/ret.png" />
         <h3 class="sig">Sign up</h3>
       </div>
-      <form class="form">
-        <input type="text" id="name" name="fname" placeholder="Name" />
+      <form class="form" [formGroup]="formSignUp">
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          placeholder="Name"
+          />
         <br />
         <br />
-        <input type="email" id="email" name="fname" placeholder="Email" />
-        <br />
-        <br />
-        <input type="password" id="senha" name="lname" placeholder="Password" />
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          placeholder="Email" />
         <br />
         <br />
         <input
           type="password"
-          id="senha"
-          name="lname"
+          id="password"
+          formControlName="password"
+          placeholder="Password"
+        />
+        <br />
+        <br />
+        <input
+          type="password"
+          id="confirmPassword"
+          formControlName="confirmPassword"
           placeholder="Confirm Password"
         />
+
+        <button (click)="onSubmit()" class="submit" form="form" style="color: black">
+          <a routerLink="./signin">Sign in now</a>
+        </button>
       </form>
-
-      <br /><br />
-
-      <button class="submit" form="form" style="color: black">
-        <a routerLink="./signin">Sign in now</a>
-      </button>
 
       <p class="cad">
         Already have an account?

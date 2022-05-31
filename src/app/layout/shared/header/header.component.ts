@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService, User } from 'src/app/services/Auth/login.service';
+import { User } from 'src/app/modules/iuser';
+import { LoginService } from 'src/app/services/Auth/login.service';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,6 @@ export class HeaderComponent implements OnInit {
   constructor(
     private loginService: LoginService
   ) {
-
     this.loginService.currentUser.subscribe(user => {
       this.currentUser = user;
     });
