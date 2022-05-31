@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LoginService } from 'src/app/services/Auth/login.service';
 @Component({
   selector: 'app-sign-in',
@@ -10,7 +11,8 @@ export class SignInComponent implements OnInit {
   formLogin: FormGroup;
   constructor(
     private formBuilder: FormBuilder,
-    private serviceLogin: LoginService
+    private serviceLogin: LoginService,
+    private route: Router
   ) {}
 
   ngOnInit(): void {
@@ -32,6 +34,7 @@ export class SignInComponent implements OnInit {
     this.serviceLogin.login(email, password).subscribe(
       (result) => {
         confirm('ACERTOOU');
+        this.route.navigate(['/']);
       },
       (err) => {
         confirm('ERROOOU');
