@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { IDataSlider } from 'src/app/modules/idata-slider';
+import { IDataSlider } from 'src/app/models/idata-slider';
 
 @Component({
   selector: 'app-slider',

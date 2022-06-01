@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 
 import { GamesService } from '../../../services/games/games.service';
 import { IDataCarousel } from '../../../models/idata-carousel';
-import { IDataSlider } from 'src/app/modules/idata-slider';
+import { IDataSlider } from 'src/app/models/idata-slider';
 
 @Component({
   selector: 'app-home',
