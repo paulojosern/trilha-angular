@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { GamesService } from '../../../services/games/games.service';
-import { IDataCarousel } from './../../../modules/idata-carousel';
+import { IDataCarousel } from '../../../models/idata-carousel';
 import { IDataSlider } from 'src/app/modules/idata-slider';
 
 @Component({

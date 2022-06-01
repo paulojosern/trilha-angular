@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { IDataCarousel } from './../../../modules/idata-carousel';
+import { IDataCarousel } from '../../../models/idata-carousel';
 
 @Component({
   selector: 'app-carousel',
