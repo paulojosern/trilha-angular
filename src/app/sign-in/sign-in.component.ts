@@ -45,7 +45,6 @@ export class SignInComponent implements OnInit {
         this.router.navigate([this.returnUrl]);
       },
       err => {
-        // console.log(err);
         this.message = err.error.message;
         this.errorMsg = Object.assign([], err);
         // alert(this.errorMsg.error.message);
