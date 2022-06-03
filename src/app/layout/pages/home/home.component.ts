@@ -21,15 +21,21 @@ export class HomeComponent implements OnInit {
   upcomingDiscount: IDataCarousel[];
   free: IDataCarousel[];
 
-  constructor(private service: GamesService) {}
+  constructor(private service: GamesService) { }
 
   ngOnInit(): void {
     // this.games$ = this.service.getGames() // Opção usando observable
+    this.getSlider() // buscar slider jogos
+    this.getGames() // buscar games
+  }
 
+  getSlider(): void {
     this.service.getSlider().subscribe((slider) => {
       this.slider = slider;
     });
+  }
 
+  getGames(): void {
     this.service.getGames().subscribe((games) => {
       this.getDataSlider('news', games);
       this.getDataSlider('popular', games);
@@ -40,13 +46,13 @@ export class HomeComponent implements OnInit {
   }
 
   getDataSlider(list, data): void {
-    this[list] = data.filter((i) =>{
+    this[list] = data.filter((i) => {
       // i.type === list && discount === false ? i.discount === 0 : i.discount > 0
       if (i.type === list) {
         if (i.discount > 0) {
           return i;
         }
-       return i;
+        return i;
       }
     });
     console.log(this[list])
